@@ -15,6 +15,7 @@ public class HS_Events
 		MinecraftForge.EVENT_BUS.register(new HS_PlayerAttackEntity());
 		MinecraftForge.EVENT_BUS.register(new HS_ItemInfoAdditions());
 		MinecraftForge.EVENT_BUS.register(new HS_EntityDropEvent());
+		MinecraftForge.EVENT_BUS.register(new HS_AnvilEvent());
 
 	}
 

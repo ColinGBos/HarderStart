@@ -41,6 +41,7 @@ public class OreDictionaryRegistry
 		OreDictionary.registerOre("oreApatite", HS_Items.apatiteOre_rubble);
 		OreDictionary.registerOre("oreUranium", HS_Items.uraniumOre_rubble);
 		OreDictionary.registerOre("oreYellorite", HS_Items.yelloriteOre_rubble);
+		OreDictionary.registerOre("oreYellorium", HS_Items.yelloriteOre_rubble);
 		OreDictionary.registerOre("orePlatinum", HS_Items.platinumOre_rubble);
 		OreDictionary.registerOre("oreMithril", HS_Items.mithrilOre_rubble);
 		OreDictionary.registerOre("stoneEnd", HS_Items.stoneEnd_rubble);

@@ -50,6 +50,7 @@ public class HS_Items
 	public static Item yelloriteOre_rubble;
 	public static Item platinumOre_rubble;
 	public static Item mithrilOre_rubble;
+	public static Item testEnchantment;
 
 
 	public static void init()
@@ -94,6 +95,7 @@ public class HS_Items
 		platinumOre_rubble = new ItemRubble(HS_ItemInfo.PlatinumOreRubbleName);
 		mithrilOre_rubble = new ItemRubble(HS_ItemInfo.MithrilOreRubbleName);
 		quartzOre_rubble = new ItemRubble(HS_ItemInfo.QuartzOreRubbleName);
+		testEnchantment = new ItemEnchantmentGen("test");
 
 
 		GameRegistry.registerItem(flint_hatchet, HS_ItemInfo.FlintHatchetName);
