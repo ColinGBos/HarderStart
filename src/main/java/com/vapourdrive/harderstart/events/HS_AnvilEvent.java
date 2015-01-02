@@ -6,7 +6,6 @@ import java.util.Map;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
-import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.AnvilUpdateEvent;
 import cpw.mods.fml.common.eventhandler.EventPriority;
@@ -33,15 +32,13 @@ public class HS_AnvilEvent
 		if(!leftEnchantmentCollection.containsAll(rightEnchantmentCollection))
 		{
 			leftEnchantments.putAll(rightEnchantments);
-			ItemStack result = new ItemStack(leftInput.getItem(), 1, leftInput.getItemDamage());
-			
+			//ItemStack result = new ItemStack(leftInput.getItem(), 1, leftInput.getItemDamage());
+			ItemStack result = leftInput.copy();
 			EnchantmentHelper.setEnchantments(leftEnchantments, result);
-			//event.output = result.copy();
-			event.output = new ItemStack(Items.baked_potato);
-			event.cost = 0;
-			return;
+			
+			event.output = result;
+			event.cost = 1;
 		}
-		return;
 	}
 
 	public static int getEnchantmentCost(ItemStack stack)
