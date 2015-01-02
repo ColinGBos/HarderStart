@@ -30,7 +30,20 @@ public class HS_ItemInfo
 	public static String SilverOreRubbleName = "oreSilver_rubble";
 	public static String LeadOreRubbleName = "oreLead_rubble";
 	public static String NickelOreRubbleName = "oreNickel_rubble";
-
+	public static String QuartzOreRubbleName = "oreQuartz_rubble";
+	public static String NetherrackRubbleName = "netherrack_rubble";
+	public static String DarkIronOreRubbleName = "oreFzDarkIron_rubble";
+	public static String AluminumOreRubbleName = "oreAluminum_rubble";
+	public static String SulfurOreRubbleName = "oreSulfur_rubble";
+	public static String SaltpeterOreRubbleName = "oreSaltpeter_rubble";
+	public static String CobaltOreRubbleName = "oreCobalt_rubble";
+	public static String ArditeOreRubbleName = "oreArdite_rubble";
+	public static String ApatiteOreRubbleName = "oreApatite_rubble";
+	public static String UraniumOreRubbleName = "oreUranium_rubble";
+	public static String YelloriteOreRubbleName = "oreYellorite_rubble";
+	public static String PlatinumOreRubbleName = "orePlatinum_rubble";
+	public static String EndStoneRubbleName = "stoneEnd_rubble";
+	public static String MithrilOreRubbleName = "oreMithril_rubble";
 
 
 }

@@ -1,8 +1,9 @@
 package com.vapourdrive.harderstart.oredictionary;
 
-import com.vapourdrive.harderstart.items.HS_Items;
-
+import net.minecraft.init.Blocks;
 import net.minecraftforge.oredict.OreDictionary;
+
+import com.vapourdrive.harderstart.items.HS_Items;
 
 
 public class OreDictionaryRegistry
@@ -13,8 +14,10 @@ public class OreDictionaryRegistry
 	public static void init()
 	{
 		//Blocks
-		//OreDictionary.registerOre("oreRedstone", new ItemStack(Blocks.lit_redstone_ore));
-		//It doesn't want to register!
+		OreDictionary.registerOre("netherrack", Blocks.netherrack);
+		OreDictionary.registerOre("stoneEnd", Blocks.end_stone);
+		
+		//Rubbles
 		OreDictionary.registerOre("oreIron", HS_Items.ironOre_rubble);
 		OreDictionary.registerOre("oreCoal", HS_Items.coalOre_rubble);
 		OreDictionary.registerOre("oreGold", HS_Items.goldOre_rubble);
@@ -27,6 +30,22 @@ public class OreDictionaryRegistry
 		OreDictionary.registerOre("oreSilver", HS_Items.silverOre_rubble);
 		OreDictionary.registerOre("oreNickel", HS_Items.nickelOre_rubble);
 		OreDictionary.registerOre("oreLead", HS_Items.leadOre_rubble);
+		OreDictionary.registerOre("stoneEnd", HS_Items.stoneEnd_rubble);
+		OreDictionary.registerOre("netherrack", HS_Items.netherrack_rubble);
+		OreDictionary.registerOre("oreQuartz", HS_Items.quartzOre_rubble);
+		OreDictionary.registerOre("oreAluminum", HS_Items.aluminumOre_rubble);
+		OreDictionary.registerOre("oreSulfur", HS_Items.sulfurOre_rubble);
+		OreDictionary.registerOre("oreSaltpeter", HS_Items.saltpeterOre_rubble);
+		OreDictionary.registerOre("oreCobalt", HS_Items.cobaltOre_rubble);
+		OreDictionary.registerOre("oreArdite", HS_Items.arditeOre_rubble);
+		OreDictionary.registerOre("oreApatite", HS_Items.apatiteOre_rubble);
+		OreDictionary.registerOre("oreUranium", HS_Items.uraniumOre_rubble);
+		OreDictionary.registerOre("oreYellorite", HS_Items.yelloriteOre_rubble);
+		OreDictionary.registerOre("orePlatinum", HS_Items.platinumOre_rubble);
+		OreDictionary.registerOre("oreMithril", HS_Items.mithrilOre_rubble);
+		OreDictionary.registerOre("stoneEnd", HS_Items.stoneEnd_rubble);
+
+
 
 	}
 

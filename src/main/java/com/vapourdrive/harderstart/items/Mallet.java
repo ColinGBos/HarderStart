@@ -114,7 +114,7 @@ public class Mallet extends ItemTool
 
 		if (block.getMaterial() == Material.rock)
 		{
-			if (tryRubbleDrop(world, block, x, y, z, entity) == false)
+			if (tryRubbleDrop(stack, world, block, x, y, z, entity) == false)
 			{
 				int bonus = world.rand.nextInt(EnchantmentHelper.getFortuneModifier(entity) + 1);
 				RandomUtils.spawnItem(world, x, y, z, new ItemStack(getDefaultRubble(world, block, entity), 6 + bonus), 0.7F);
@@ -129,6 +129,7 @@ public class Mallet extends ItemTool
 	 * ints for the block loops through the array and searches for a matched
 	 * rubble item, and spawns it (most loop 1) total rubble drop count remains
 	 * static
+	 * @param stack 
 	 * 
 	 * @param world
 	 * @param block
@@ -138,20 +139,24 @@ public class Mallet extends ItemTool
 	 * @param entity
 	 * @return whether or not an ore-dictionary match is found
 	 */
-	public static boolean tryRubbleDrop(World world, Block block, int x, int y, int z, EntityLivingBase entity)
+	public boolean tryRubbleDrop(ItemStack stack, World world, Block block, int x, int y, int z, EntityLivingBase entity)
 	{
 		boolean hasDrop = false;
 		int bonus = 0;
-
-		int[] oreIDs = OreDictionary.getOreIDs(new ItemStack(block, 1, world.getBlockMetadata(x, y, z)));
-		if (oreIDs != null)
+		int metadata = world.getBlockMetadata(x, y, z);
+		int toolHarvestLevel = this.toolMaterial.getHarvestLevel();
+		ItemStack rubble = null;
+		Item defaultRubble = getDefaultRubble(world, block, entity);
+		
+		int[] oreIDs = OreDictionary.getOreIDs(new ItemStack(block, 1, metadata));
+		if (oreIDs != null && toolHarvestLevel >= block.getHarvestLevel(metadata))
 		{
 			for (int i = 0; i < oreIDs.length; i++)
 			{
 				HarderStart.log.log(Level.INFO, OreDictionary.getOreName(oreIDs[i]));
 				bonus = world.rand.nextInt(EnchantmentHelper.getFortuneModifier(entity) + 1);
 
-				ItemStack rubble = ItemStackUtils.getItemStackFromString("harderstart", OreDictionary.getOreName(oreIDs[i]) + "_rubble",
+				rubble = ItemStackUtils.getItemStackFromString("harderstart", OreDictionary.getOreName(oreIDs[i]) + "_rubble",
 						1 + bonus);
 				if (rubble != null)
 				{
@@ -161,7 +166,11 @@ public class Mallet extends ItemTool
 			}
 		}
 
-		RandomUtils.spawnItem(world, x, y, z, new ItemStack(getDefaultRubble(world, block, entity), 7 - bonus), 0.7F);
+		// check exists to make sure stone doesn't drop twice as much rubble as it should
+		if(rubble != null && rubble.getItem() != getDefaultRubble(world, block, entity))
+		{
+			RandomUtils.spawnItem(world, x, y, z, new ItemStack(defaultRubble, 7), 0.7F);
+		}
 
 		return hasDrop;
 	}
@@ -172,18 +181,20 @@ public class Mallet extends ItemTool
 	 * 
 	 * @param world
 	 * @param block
-	 *            being broken
 	 * @param entity
-	 *            breaking block
 	 * @return rubble item to spawn based on the dimension
 	 */
-	public static Item getDefaultRubble(World world, Block block, EntityLivingBase entity)
+	public Item getDefaultRubble(World world, Block block, EntityLivingBase entity)
 	{
 		int dimensionID = world.provider.dimensionId;
 		switch (dimensionID)
 		{
 			case 0:
 				return HS_Items.stone_rubble;
+			case -1:
+				return HS_Items.netherrack_rubble;
+			case 1:
+				return HS_Items.stoneEnd_rubble;
 			default:
 				return HS_Items.stone_rubble;
 		}

@@ -24,6 +24,9 @@ public class HS_Items
 	public static Item diamond_mallet;
 	public static Item iron_mallet;
 	public static Item stone_rubble;
+	public static Item stoneEnd_rubble;
+	public static Item netherrack_rubble;
+	public static Item quartzOre_rubble;
 	public static Item ironOre_rubble;
 	public static Item coalOre_rubble;
 	public static Item goldOre_rubble;
@@ -36,8 +39,17 @@ public class HS_Items
 	public static Item silverOre_rubble;
 	public static Item nickelOre_rubble;
 	public static Item leadOre_rubble;
-
-	
+	public static Item darkIronOre_rubble;
+	public static Item aluminumOre_rubble;
+	public static Item sulfurOre_rubble;
+	public static Item saltpeterOre_rubble;
+	public static Item cobaltOre_rubble;
+	public static Item arditeOre_rubble;
+	public static Item apatiteOre_rubble;
+	public static Item uraniumOre_rubble;
+	public static Item yelloriteOre_rubble;
+	public static Item platinumOre_rubble;
+	public static Item mithrilOre_rubble;
 
 
 	public static void init()
@@ -68,6 +80,21 @@ public class HS_Items
 		silverOre_rubble = new ItemRubble(HS_ItemInfo.SilverOreRubbleName);
 		leadOre_rubble = new ItemRubble(HS_ItemInfo.LeadOreRubbleName);
 		nickelOre_rubble = new ItemRubble(HS_ItemInfo.NickelOreRubbleName);
+		netherrack_rubble = new ItemRubble(HS_ItemInfo.NetherrackRubbleName);
+		stoneEnd_rubble = new ItemRubble(HS_ItemInfo.EndStoneRubbleName);
+		darkIronOre_rubble = new ItemRubble(HS_ItemInfo.DarkIronOreRubbleName);
+		aluminumOre_rubble = new ItemRubble(HS_ItemInfo.AluminumOreRubbleName);
+		sulfurOre_rubble = new ItemRubble(HS_ItemInfo.SulfurOreRubbleName);
+		saltpeterOre_rubble = new ItemRubble(HS_ItemInfo.SaltpeterOreRubbleName);
+		cobaltOre_rubble = new ItemRubble(HS_ItemInfo.CobaltOreRubbleName);
+		arditeOre_rubble = new ItemRubble(HS_ItemInfo.ArditeOreRubbleName);
+		apatiteOre_rubble = new ItemRubble(HS_ItemInfo.ApatiteOreRubbleName);
+		uraniumOre_rubble = new ItemRubble(HS_ItemInfo.UraniumOreRubbleName);
+		yelloriteOre_rubble = new ItemRubble(HS_ItemInfo.YelloriteOreRubbleName);
+		platinumOre_rubble = new ItemRubble(HS_ItemInfo.PlatinumOreRubbleName);
+		mithrilOre_rubble = new ItemRubble(HS_ItemInfo.MithrilOreRubbleName);
+		quartzOre_rubble = new ItemRubble(HS_ItemInfo.QuartzOreRubbleName);
+
 
 		GameRegistry.registerItem(flint_hatchet, HS_ItemInfo.FlintHatchetName);
 		GameRegistry.registerItem(flint_spear, HS_ItemInfo.FlintSpearName);
@@ -95,6 +122,21 @@ public class HS_Items
 		GameRegistry.registerItem(silverOre_rubble, HS_ItemInfo.SilverOreRubbleName);
 		GameRegistry.registerItem(leadOre_rubble, HS_ItemInfo.LeadOreRubbleName);
 		GameRegistry.registerItem(nickelOre_rubble, HS_ItemInfo.NickelOreRubbleName);
+		GameRegistry.registerItem(netherrack_rubble, HS_ItemInfo.NetherrackRubbleName);
+		GameRegistry.registerItem(stoneEnd_rubble, HS_ItemInfo.EndStoneRubbleName);
+		GameRegistry.registerItem(darkIronOre_rubble, HS_ItemInfo.DarkIronOreRubbleName);
+		GameRegistry.registerItem(aluminumOre_rubble, HS_ItemInfo.AluminumOreRubbleName);
+		GameRegistry.registerItem(sulfurOre_rubble, HS_ItemInfo.SulfurOreRubbleName);
+		GameRegistry.registerItem(saltpeterOre_rubble, HS_ItemInfo.SaltpeterOreRubbleName);
+		GameRegistry.registerItem(cobaltOre_rubble, HS_ItemInfo.CobaltOreRubbleName);
+		GameRegistry.registerItem(arditeOre_rubble, HS_ItemInfo.ArditeOreRubbleName);
+		GameRegistry.registerItem(apatiteOre_rubble, HS_ItemInfo.ApatiteOreRubbleName);
+		GameRegistry.registerItem(uraniumOre_rubble, HS_ItemInfo.UraniumOreRubbleName);
+		GameRegistry.registerItem(yelloriteOre_rubble, HS_ItemInfo.YelloriteOreRubbleName);
+		GameRegistry.registerItem(platinumOre_rubble, HS_ItemInfo.PlatinumOreRubbleName);
+		GameRegistry.registerItem(mithrilOre_rubble, HS_ItemInfo.MithrilOreRubbleName);
+		GameRegistry.registerItem(quartzOre_rubble, HS_ItemInfo.QuartzOreRubbleName);
+
 	}
 
 	public static void registerRecipes()
