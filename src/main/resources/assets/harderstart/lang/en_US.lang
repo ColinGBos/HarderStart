@@ -1,0 +1,35 @@
+//English Localizations
+
+//Blocks
+tile.flint_block.name=Ground Flint
+tile.cutting_table.name=Cutting Table
+tile.food_bucket_block.name=Food Bucket
+
+//Items
+item.flint_hatchet.name=Flint Hatchet
+item.flint_spear.name=Flint Spear
+item.flint_knife.name=Flint Knife
+item.dead_cow.name=Dead Cow
+item.dead_horse.name=Dead Horse
+item.dead_pig.name=Dead Pig
+item.dead_sheep.name=Dead Sheep
+item.dead_chicken.name=Dead Chicken
+item.diamond_knife.name=Diamond Knife
+item.iron_knife.name=Iron Knife
+item.food_bucket.name=Food Barrel
+item.rock_mallet.name=Rock Mallet
+item.iron_mallet.name=Iron Mallet
+item.diamond_mallet.name=Diamond Mallet
+item.stone_rubble.name=Rubble
+item.oreIron_rubble.name=Iron Ore Rubble
+item.oreCoal_rubble.name=Coal Ore Rubble
+item.oreGold_rubble.name=Gold Ore Rubble
+item.oreLapis_rubble.name=Lapis Lazuli Ore Rubble
+item.oreEmerald_rubble.name=Emerald Ore Rubble
+item.oreDiamond_rubble.name=Diamond Ore Rubble
+item.oreRedstone_rubble.name=Redstone Ore Rubble
+item.oreTin_rubble.name=Tin Ore Rubble
+item.oreCopper_rubble.name=Copper Ore Rubble
+item.oreSilver_rubble.name=Silver Ore Rubble
+item.oreNickel_rubble.name=Nickel Ore Rubble
+item.oreLead_rubble.name=Lead Ore Rubble

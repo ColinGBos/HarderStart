@@ -1,0 +1,302 @@
+<Recipes name="CuttingTableRecipes">
+	<recipe name="DeadCow">
+		<tool>0</tool>
+		<input>
+			<itemStack modID="harderstart" itemName="dead_cow"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="bone" number="2" itemMeta="0"/>
+			<itemStack modID="minecraft" itemName="leather" number="6" itemMeta="0"/>
+			<itemStack modID="minecraft" itemName="beef" number="5" itemMeta="0"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="DeadHorse">
+		<tool>0</tool>
+		<input>
+			<itemStack modID="harderstart" itemName="dead_horse"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="bone" number="3" itemMeta="0"/>
+			<itemStack modID="minecraft" itemName="leather" number="6" itemMeta="0"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="DeadPig">
+		<tool>0</tool>
+		<input>
+			<itemStack modID="harderstart" itemName="dead_pig"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="bone" number="1" itemMeta="0"/>
+			<itemStack modID="minecraft" itemName="porkchop" number="5" itemMeta="0"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="DeadSheep">
+		<tool>0</tool>
+		<input>
+			<itemStack modID="harderstart" itemName="dead_sheep"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="bone" number="1" itemMeta="0"/>
+			<itemStack modID="minecraft" itemName="wool" number="6" itemMeta="0"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="DeadChicken">
+		<tool>0</tool>
+		<input>
+			<itemStack modID="harderstart" itemName="dead_chicken"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="egg" number="1" itemMeta="0"/>
+			<itemStack modID="minecraft" itemName="feather" number="3" itemMeta="0"/>
+			<itemStack modID="minecraft" itemName="chicken" number="1" itemMeta="0"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="MinecraftLog0">
+		<tool>1</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="log" itemMeta="0"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="planks" number="5" itemMeta="0"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="MinecraftLog1">
+		<tool>1</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="log" itemMeta="1"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="planks" number="5" itemMeta="1"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="MinecraftLog2">
+		<tool>1</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="log" itemMeta="2"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="planks" number="5" itemMeta="2"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="MinecraftLog3">
+		<tool>1</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="log" itemMeta="3"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="planks" number="5" itemMeta="3"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="MinecraftLog4">
+		<tool>1</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="log2" itemMeta="0"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="planks" number="5" itemMeta="4"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="MinecraftLog5">
+		<tool>1</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="log2" itemMeta="1"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="planks" number="5" itemMeta="5"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="OakStairs">
+		<tool>1</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="oak_stairs" itemMeta="0"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="planks" number="1" itemMeta="0"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="BirchStairs">
+		<tool>1</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="birch_stairs" itemMeta="0"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="planks" number="1" itemMeta="2"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="SpruceStairs">
+		<tool>1</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="spruce_stairs" itemMeta="0"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="planks" number="1" itemMeta="1"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="JungleStairs">
+		<tool>1</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="jungle_stairs" itemMeta="0"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="planks" number="1" itemMeta="3"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="AcaciaStairs">
+		<tool>1</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="acacia_stairs" itemMeta="0"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="planks" number="1" itemMeta="4"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="DarkOackStairs">
+		<tool>1</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="dark_oak_stairs" itemMeta="0"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="planks" number="1" itemMeta="5"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="Fence">
+		<tool>1</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="fence" itemMeta="0"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="stick" number="2" itemMeta="0"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="FenceGate">
+		<tool>1</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="fence_gate" itemMeta="0"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="stick" number="2" itemMeta="0"/>
+			<itemStack modID="minecraft" itemName="planks" number="1" itemMeta="0"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="Bookshelf">
+		<tool>1</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="bookshelf" itemMeta="0"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="book" number="2" itemMeta="0"/>
+			<itemStack modID="minecraft" itemName="stick" number="2" itemMeta="0"/>
+			<itemStack modID="minecraft" itemName="planks" number="3" itemMeta="0"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="Clay">
+		<tool>3</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="clay" itemMeta="0"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="clay_ball" number="4" itemMeta="0"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="Brick">
+		<tool>2</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="brick_block" itemMeta="0"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="brick" number="3" itemMeta="0"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="Glowstone">
+		<tool>2</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="glowstone" itemMeta="0"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="glowstone_dust" number="3" itemMeta="0"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="Quartz">
+		<tool>2</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="quartz_block" itemMeta="0"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="quartz" number="3" itemMeta="0"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="Wool">
+		<tool>0</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="wool"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="string" number="2" itemMeta="0"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="Ladder">
+		<tool>1</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="ladder" itemMeta="0"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="stick" number="3" itemMeta="0"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="Boat">
+		<tool>1</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="boat" itemMeta="0"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="planks" number="3" itemMeta="0"/>
+			<itemStack modID="minecraft" itemName="stick" number="4" itemMeta="0"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="Chest">
+		<tool>1</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="chest" itemMeta="0"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="planks" number="5" itemMeta="0"/>
+		</outputs>
+	</recipe>
+	
+	<recipe name="BOPLog0">
+		<tool>1</tool>
+		<input>
+			<itemStack modID="BiomesOPlenty" itemName="sand"/>
+		</input>
+		<outputs>
+			<itemStack modID="harderstart" itemName="flint_hatchet" number="1" itemMeta="0"/>
+		</outputs>
+	</recipe>
+</Recipes>

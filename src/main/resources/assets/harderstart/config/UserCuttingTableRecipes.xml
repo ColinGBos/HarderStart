@@ -1,0 +1,48 @@
+<!--
+	This is the file for user defined recipes for the cutting table
+	
+	This will not be overwritten every game launch and can be used to both overwrite the 
+		existing recipes and add your own to the cutting table.
+		
+	If you want to override the existing recipe in the game simply include a recipe
+		with the same name here.
+		
+	Recipes can be completely blank if you wish to simply remove the recipe
+	
+	Including the following recipe will prevent the recipe in the core file from being 
+		registered and will not leave one in its place
+	<recipe name="Plank">
+	</recipe>
+	
+	Restrictions/guidelines:
+	
+	The tool tag must be filled with a number from 0 to 3
+ 		0 for knife, 1 for axe, 2 for pickaxe, 3 for shovel
+	There can only be one input currently, support for other tools may be added in the future
+	There can also only be 4 outputs, any others will be ignored
+	
+	"modID" is the id of the mod, not the name, the mcmod.info file will give this 
+		as will the "Mods" menu. This is a needed attribute.
+	"itemName" is the gameregistry name that the item is registered with, there is a 
+		public list of minecraft's names and some helpful mods make theres public
+	"number" is optional and will have no affect if used in the stack for an input
+		it defaults to one of it is not specified
+	"itemMeta" is optional and will default to 0 if not specified
+		eg - if you want to use just birch planks it needs to be 2
+	
+	sample recipe would be: 
+
+	<recipe name="MinecraftLog0">
+		<tool>1</tool>
+		<input>
+			<itemStack modID="minecraft" itemName="log" itemMeta="0"/>
+		</input>
+		<outputs>
+			<itemStack modID="minecraft" itemName="planks" number="5" itemMeta="0"/>
+		</outputs>
+	</recipe>
+	
+-->
+<Recipes name="CuttingTableRecipes">
+	
+</Recipes>
