@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.vapourdrive.harderstart.blocks.HS_Blocks;
 import com.vapourdrive.harderstart.config.ConfigHandler;
+import com.vapourdrive.harderstart.creativetabs.CreativeTabGem;
 import com.vapourdrive.harderstart.creativetabs.CreativeTabHS;
 import com.vapourdrive.harderstart.creativetabs.CreativeTabRubble;
 import com.vapourdrive.harderstart.entities.HS_Entities;
@@ -40,6 +41,7 @@ public class HarderStart
 
 	public static CreativeTabs tabharderstart;
 	public static CreativeTabs tabRubble;
+	public static CreativeTabs tabGem;
 	public static String configPath;
 
 	public static final Logger log = LogManager.getLogger(HS_ModInfo.ModName);
@@ -51,6 +53,7 @@ public class HarderStart
 		configPath = event.getModConfigurationDirectory() + "/harderstart/";
 		tabharderstart = new CreativeTabHS(CreativeTabs.getNextID(), "tabharderstart");
 		tabRubble = new CreativeTabRubble(CreativeTabs.getNextID(), "tabRubble");
+		tabGem = new CreativeTabGem(CreativeTabs.getNextID(), "tabGem");
 
 		ConfigHandler.init(configPath);
 

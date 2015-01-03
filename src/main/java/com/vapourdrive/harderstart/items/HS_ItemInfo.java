@@ -17,6 +17,8 @@ public class HS_ItemInfo
 	public static String RockMalletName = "rock_mallet";
 	public static String IronMalletName = "iron_mallet";
 	public static String DiamondMalletName = "diamond_mallet";
+	
+	//rubbles
 	public static String RubbleName = "stone_rubble";
 	public static String IronOreRubbleName = "oreIron_rubble";
 	public static String CoalOreRubbleName = "oreCoal_rubble";
@@ -44,6 +46,32 @@ public class HS_ItemInfo
 	public static String PlatinumOreRubbleName = "orePlatinum_rubble";
 	public static String EndStoneRubbleName = "stoneEnd_rubble";
 	public static String MithrilOreRubbleName = "oreMithril_rubble";
-
+	
+	//gems
+	public static String HeliodorGemName = "gem_heliodor";
+	public static String PyrolusiteGemName = "gem_pyrolusite";
+	public static String AventurineGemName = "gem_aventurine";
+	public static String NephriteGemName = "gem_nephrite";
+	public static String HambergiteGemName = "gem_hambergite";
+	public static String AmazoniteGemName = "gem_amazonite";
+	public static String AquamarineGemName = "gem_aquamarine";
+	public static String HessoniteGemName = "gem_hessonite";
+	public static String ZirconGemName = "gem_zircon";
+	public static String JadeiteGemName = "gem_jadeite";
+	public static String HematiteGemName = "gem_hematite";
+	public static String SpodumeneGemName = "gem_spodumene";
+	public static String CitrineGemName = "gem_citrine";
+	public static String FlouriteGemName = "gem_flourite";
+	public static String PyriteGemName = "gem_pyrite";
+	public static String KornerupineGemName = "gem_kornerupine";
+	public static String PrehniteGemName = "gem_prehnite";
+	public static String DioptaseGemName = "gem_dioptase";
+	public static String AgateGemName = "gem_agate";
+	public static String VarisciteGemName = "gem_variscite";
+	public static String AlmandineGemName = "gem_almandine";
+	public static String PyropeGemName = "gem_pyrope";
+	public static String AlexandriteGemName = "gem_alexandrite";
+	public static String GosheniteGemName = "gem_goshenite";
+	public static String TourmalineGemName = "gem_tourmaline";
 
 }

@@ -1,7 +1,9 @@
 package com.vapourdrive.harderstart.items;
 
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.util.EnumChatFormatting;
 import net.minecraftforge.common.util.EnumHelper;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -23,6 +25,8 @@ public class HS_Items
 	public static Item rock_mallet;
 	public static Item diamond_mallet;
 	public static Item iron_mallet;
+	
+	//rubbles
 	public static Item stone_rubble;
 	public static Item stoneEnd_rubble;
 	public static Item netherrack_rubble;
@@ -50,7 +54,35 @@ public class HS_Items
 	public static Item yelloriteOre_rubble;
 	public static Item platinumOre_rubble;
 	public static Item mithrilOre_rubble;
-	public static Item testEnchantment;
+	
+	//Gems
+	public static Item gem_Heliodor;
+	public static Item gem_Pyrolusite;
+	public static Item gem_Aventurine;
+	public static Item gem_Nephrite;
+	public static Item gem_Hambergite;
+	public static Item gem_Amazonite;
+	public static Item gem_Aquamarine;
+	public static Item gem_Hessonite;
+	public static Item gem_Zircon;
+	public static Item gem_Jadeite;
+	public static Item gem_Hematite;
+	public static Item gem_Spodumene;
+	public static Item gem_Citrine;
+	public static Item gem_Flourite;
+	public static Item gem_Pyrite;
+	public static Item gem_Kornerupine;
+	public static Item gem_Prehnite;
+	public static Item gem_Dioptase;
+	public static Item gem_Agate;
+	public static Item gem_Variscite;
+	public static Item gem_Almandine;
+	public static Item gem_Pyrope;
+	public static Item gem_Alexandrite;
+	public static Item gem_Goshenite;
+	public static Item gem_Tourmaline;
+
+
 
 
 	public static void init()
@@ -68,6 +100,8 @@ public class HS_Items
 		rock_mallet = new Mallet(FLINT, HS_ItemInfo.RockMalletName);
 		iron_mallet = new Mallet(ToolMaterial.IRON, HS_ItemInfo.IronMalletName);
 		diamond_mallet = new Mallet(ToolMaterial.EMERALD, HS_ItemInfo.DiamondMalletName);
+		
+		//Rubbles
 		stone_rubble = new ItemRubble(HS_ItemInfo.RubbleName);
 		ironOre_rubble = new ItemRubble(HS_ItemInfo.IronOreRubbleName);
 		coalOre_rubble = new ItemRubble(HS_ItemInfo.CoalOreRubbleName);
@@ -95,7 +129,35 @@ public class HS_Items
 		platinumOre_rubble = new ItemRubble(HS_ItemInfo.PlatinumOreRubbleName);
 		mithrilOre_rubble = new ItemRubble(HS_ItemInfo.MithrilOreRubbleName);
 		quartzOre_rubble = new ItemRubble(HS_ItemInfo.QuartzOreRubbleName);
-		testEnchantment = new ItemEnchantmentGen("test");
+		
+		//Gems
+		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Pyrolusite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.PyrolusiteGemName, Enchantment.fireProtection);
+		gem_Aventurine = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Nephrite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Hambergite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Amazonite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Aquamarine = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Hessonite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Zircon = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Jadeite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Hematite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+
 
 
 		GameRegistry.registerItem(flint_hatchet, HS_ItemInfo.FlintHatchetName);
@@ -138,6 +200,7 @@ public class HS_Items
 		GameRegistry.registerItem(platinumOre_rubble, HS_ItemInfo.PlatinumOreRubbleName);
 		GameRegistry.registerItem(mithrilOre_rubble, HS_ItemInfo.MithrilOreRubbleName);
 		GameRegistry.registerItem(quartzOre_rubble, HS_ItemInfo.QuartzOreRubbleName);
+		GameRegistry.registerItem(gem_Heliodor, HS_ItemInfo.HeliodorGemName);
 
 	}
 
