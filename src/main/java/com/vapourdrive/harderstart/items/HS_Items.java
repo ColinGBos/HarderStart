@@ -64,7 +64,6 @@ public class HS_Items
 	public static Item gem_Amazonite;
 	public static Item gem_Aquamarine;
 	public static Item gem_Hessonite;
-	public static Item gem_Zircon;
 	public static Item gem_Jadeite;
 	public static Item gem_Hematite;
 	public static Item gem_Spodumene;
@@ -133,30 +132,28 @@ public class HS_Items
 		//Gems
 		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
 		gem_Pyrolusite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.PyrolusiteGemName, Enchantment.fireProtection);
-		gem_Aventurine = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Nephrite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Hambergite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Amazonite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Aquamarine = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Hessonite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Zircon = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Jadeite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Hematite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
-		gem_Heliodor = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.protection);
+		gem_Aventurine = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.AventurineGemName, Enchantment.featherFalling);
+		gem_Nephrite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.NephriteGemName, Enchantment.blastProtection);
+		gem_Hambergite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HambergiteGemName, Enchantment.projectileProtection);
+		gem_Amazonite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.AmazoniteGemName, Enchantment.respiration);
+		gem_Aquamarine = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.AquamarineGemName, Enchantment.aquaAffinity);
+		gem_Hessonite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HessoniteGemName, Enchantment.thorns);
+		gem_Jadeite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.JadeiteGemName, Enchantment.sharpness);
+		gem_Hematite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HematiteGemName, Enchantment.smite);
+		gem_Spodumene = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.SpodumeneGemName, Enchantment.baneOfArthropods);
+		gem_Citrine = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.CitrineGemName, Enchantment.knockback);
+		gem_Flourite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.FlouriteGemName, Enchantment.fireAspect);
+		gem_Pyrite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.PyriteGemName, Enchantment.looting);
+		gem_Kornerupine = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.KornerupineGemName, Enchantment.efficiency);
+		gem_Prehnite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.PrehniteGemName, Enchantment.silkTouch);
+		gem_Dioptase = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.DioptaseGemName, Enchantment.unbreaking);
+		gem_Agate = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.AgateGemName, Enchantment.fortune);
+		gem_Variscite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.VarisciteGemName, Enchantment.power);
+		gem_Almandine = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.AlmandineGemName, Enchantment.punch);
+		gem_Pyrope = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.PyropeGemName, Enchantment.flame);
+		gem_Alexandrite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.AlexandriteGemName, Enchantment.infinity);
+		gem_Goshenite = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.GosheniteGemName, Enchantment.field_151370_z);
+		gem_Tourmaline = new ItemEnchantmentGen(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.TourmalineGemName, Enchantment.field_151369_A);
 
 
 
@@ -174,6 +171,8 @@ public class HS_Items
 		GameRegistry.registerItem(stone_rubble, HS_ItemInfo.RubbleName);
 		GameRegistry.registerItem(iron_mallet, HS_ItemInfo.IronMalletName);
 		GameRegistry.registerItem(diamond_mallet, HS_ItemInfo.DiamondMalletName);
+		
+		//rubbles
 		GameRegistry.registerItem(ironOre_rubble, HS_ItemInfo.IronOreRubbleName);
 		GameRegistry.registerItem(coalOre_rubble, HS_ItemInfo.CoalOreRubbleName);
 		GameRegistry.registerItem(goldOre_rubble, HS_ItemInfo.GoldOreRubbleName);
@@ -200,7 +199,33 @@ public class HS_Items
 		GameRegistry.registerItem(platinumOre_rubble, HS_ItemInfo.PlatinumOreRubbleName);
 		GameRegistry.registerItem(mithrilOre_rubble, HS_ItemInfo.MithrilOreRubbleName);
 		GameRegistry.registerItem(quartzOre_rubble, HS_ItemInfo.QuartzOreRubbleName);
+		
+		//gems
 		GameRegistry.registerItem(gem_Heliodor, HS_ItemInfo.HeliodorGemName);
+		GameRegistry.registerItem(gem_Pyrolusite, HS_ItemInfo.PyrolusiteGemName);
+		GameRegistry.registerItem(gem_Aventurine, HS_ItemInfo.AventurineGemName);
+		GameRegistry.registerItem(gem_Nephrite, HS_ItemInfo.NephriteGemName);
+		GameRegistry.registerItem(gem_Hambergite, HS_ItemInfo.HambergiteGemName);
+		GameRegistry.registerItem(gem_Amazonite, HS_ItemInfo.AmazoniteGemName);
+		GameRegistry.registerItem(gem_Aquamarine, HS_ItemInfo.AquamarineGemName);
+		GameRegistry.registerItem(gem_Hessonite, HS_ItemInfo.HessoniteGemName);
+		GameRegistry.registerItem(gem_Jadeite, HS_ItemInfo.JadeiteGemName);
+		GameRegistry.registerItem(gem_Hematite, HS_ItemInfo.HematiteGemName);
+		GameRegistry.registerItem(gem_Spodumene, HS_ItemInfo.SpodumeneGemName);
+		GameRegistry.registerItem(gem_Citrine, HS_ItemInfo.CitrineGemName);
+		GameRegistry.registerItem(gem_Flourite, HS_ItemInfo.FlouriteGemName);
+		GameRegistry.registerItem(gem_Pyrite, HS_ItemInfo.PyriteGemName);
+		GameRegistry.registerItem(gem_Kornerupine, HS_ItemInfo.KornerupineGemName);
+		GameRegistry.registerItem(gem_Prehnite, HS_ItemInfo.PrehniteGemName);
+		GameRegistry.registerItem(gem_Dioptase, HS_ItemInfo.DioptaseGemName);
+		GameRegistry.registerItem(gem_Agate, HS_ItemInfo.AgateGemName);
+		GameRegistry.registerItem(gem_Variscite, HS_ItemInfo.VarisciteGemName);
+		GameRegistry.registerItem(gem_Almandine, HS_ItemInfo.AlmandineGemName);
+		GameRegistry.registerItem(gem_Pyrope, HS_ItemInfo.PyropeGemName);
+		GameRegistry.registerItem(gem_Alexandrite, HS_ItemInfo.AlexandriteGemName);
+		GameRegistry.registerItem(gem_Goshenite, HS_ItemInfo.GosheniteGemName);
+		GameRegistry.registerItem(gem_Tourmaline, HS_ItemInfo.TourmalineGemName);
+
 
 	}
 

@@ -47,10 +47,6 @@ public class ItemEnchantmentGen extends Item
 	@SideOnly(Side.CLIENT)
 	public boolean hasEffect(ItemStack stack)
 	{
-		if (stack.isItemEnchanted())
-		{
-			return true;
-		}
 		return false;
 	}
 
@@ -100,10 +96,10 @@ public class ItemEnchantmentGen extends Item
 				short shortID = nbttaglist.getCompoundTagAt(i).getShort("id");
 				short shortLevel = nbttaglist.getCompoundTagAt(i).getShort("lvl");
 
-				if (this.Enchantment.enchantmentsList[shortID] != null)
-				{
-					list.add(this.Enchantment.enchantmentsList[shortID].getTranslatedName(shortLevel));
-				}
+                if (Enchantment.enchantmentsList[shortID] != null)
+                {
+                    list.add(Enchantment.enchantmentsList[shortID].getTranslatedName(shortLevel));
+                }
 			}
 		}
 	}
@@ -164,13 +160,13 @@ public class ItemEnchantmentGen extends Item
 	@SideOnly(Side.CLIENT)
 	public void getSubItems(Item item, CreativeTabs tab, List list)
 	{
-		for (int i = 0; i < this.Enchantment.getMaxLevel(); i++)
+		ItemStack stack = new ItemStack(item, 1);
+		list.add(stack);
+
+		for (int i = 1; i <= this.Enchantment.getMaxLevel(); i++)
 		{
-			ItemStack stack = new ItemStack(item, 1);
-			if (i > 0)
-			{
-				stack.addEnchantment(Enchantment, i);
-			}
+			stack = new ItemStack(item, 1);
+			stack.addEnchantment(Enchantment, i);
 			list.add(stack);
 		}
 	}

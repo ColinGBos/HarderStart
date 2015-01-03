@@ -20,6 +20,8 @@ item.food_bucket.name=Food Barrel
 item.rock_mallet.name=Rock Mallet
 item.iron_mallet.name=Iron Mallet
 item.diamond_mallet.name=Diamond Mallet
+
+//rubble
 item.stone_rubble.name=Rubble
 item.oreIron_rubble.name=Iron Ore Rubble
 item.oreCoal_rubble.name=Coal Ore Rubble
@@ -45,3 +47,29 @@ item.oreUranium_rubble.name=Uranium Ore Rubble
 item.oreMithril_rubble.name=Mithril Ore Rubble
 item.orePlatinum_rubble.name=Platinum Ore Rubble
 item.oreQuartz_rubble.name=Quartz Ore Rubble
+
+//gems
+item.gem_heliodor.name=Heliodor
+item.gem_pyrolusite.name=Pyrolusite
+item.gem_nephrite.name=Nephrite
+item.gem_aventurine.name=Aventurine
+item.gem_hambergite.name=Hambergite
+item.gem_amazonite.name=Amazonite
+item.gem_aquamarine.name=Aquamarine
+item.gem_hessonite.name=Hessonite
+item.gem_jadeite.name=Jadeite
+item.gem_hematite.name=Hematite
+item.gem_spodumene.name=Spodumene
+item.gem_citrine.name=Citrine
+item.gem_fluorite.name=Flourite
+item.gem_pyrite.name=Pyrite
+item.gem_kornerupine.name=Kornerupine
+item.gem_prehnite.name=Prehnite
+item.gem_dioptase.name=Dioptase
+item.gem_agate.name=Agate
+item.gem_variscite.name=Variscite
+item.gem_almandine.name=Almandine
+item.gem_pyrope.name=Pyrope
+item.gem_alexandrite.name=Alexandrite
+item.gem_goshenite.name=Goshenite
+item.gem_tourmaline.name=Tourmaline

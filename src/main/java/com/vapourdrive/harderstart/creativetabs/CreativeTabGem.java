@@ -33,7 +33,7 @@ public class CreativeTabGem extends CreativeTabs
 	@Override
 	public Item getTabIconItem()
 	{
-		return HS_Items.stone_rubble;
+		return HS_Items.gem_Alexandrite;
 	}
 	
 	@Override

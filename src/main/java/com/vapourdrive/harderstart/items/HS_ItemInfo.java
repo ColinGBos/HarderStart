@@ -56,12 +56,11 @@ public class HS_ItemInfo
 	public static String AmazoniteGemName = "gem_amazonite";
 	public static String AquamarineGemName = "gem_aquamarine";
 	public static String HessoniteGemName = "gem_hessonite";
-	public static String ZirconGemName = "gem_zircon";
 	public static String JadeiteGemName = "gem_jadeite";
 	public static String HematiteGemName = "gem_hematite";
 	public static String SpodumeneGemName = "gem_spodumene";
 	public static String CitrineGemName = "gem_citrine";
-	public static String FlouriteGemName = "gem_flourite";
+	public static String FlouriteGemName = "gem_fluorite";
 	public static String PyriteGemName = "gem_pyrite";
 	public static String KornerupineGemName = "gem_kornerupine";
 	public static String PrehniteGemName = "gem_prehnite";
