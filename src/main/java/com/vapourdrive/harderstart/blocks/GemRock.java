@@ -12,6 +12,7 @@ import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 import com.vapourdrive.harderstart.HS_ModInfo;
@@ -56,6 +57,49 @@ public class GemRock extends Block
 	}
 
 	@Override
+	protected boolean canSilkHarvest()
+	{
+		return true;
+	}
+
+	@Override
+	public boolean isOpaqueCube()
+	{
+		return false;
+	}
+
+	/**
+	 * If this block doesn't render as an ordinary block it will return False
+	 * (examples: signs, buttons, stairs, etc)
+	 */
+	@Override
+	public boolean renderAsNormalBlock()
+	{
+		return false;
+	}
+
+	@Override
+	@SideOnly(Side.CLIENT)
+	public int getRenderBlockPass()
+	{
+		return 1;
+	}
+
+	@Override
+	@SideOnly(Side.CLIENT)
+	public boolean shouldSideBeRendered(IBlockAccess access, int x, int y, int z, int side)
+	{
+		Block block = access.getBlock(x, y, z);
+
+		if (block == this)
+		{
+			return false;
+		}
+
+		return true;
+	}
+
+	@Override
 	public IIcon getIcon(int side, int meta)
 	{
 		return blockTexture[meta];
@@ -97,17 +141,17 @@ public class GemRock extends Block
 		ItemEnchantmentGem gem = (ItemEnchantmentGem) GemRef.gem_colour[metadata][option];
 		Enchantment Enchantment = gem.getGemEnchantment();
 		int maxLevels = Enchantment.getMaxLevel();
-		
+
 		ItemStack stack = new ItemStack(gem);
-		
-		float f = ((world.rand.nextFloat() + ((float)maxLevels)/(10.0f)) + ((float)fortune/(5.0f)));
-		
+
+		float f = ((world.rand.nextFloat() + ((float) maxLevels) / (10.0f)) + ((float) fortune / (5.0f)));
+
 		if (f > 0.8f)
 		{
-			f = (world.rand.nextFloat() + ((float)maxLevels)/(10.0f)) + ((float)fortune/(5.0f)) * maxLevels;
+			f = (world.rand.nextFloat() + ((float) maxLevels) / (10.0f)) + ((float) fortune / (5.0f)) * maxLevels;
 
-			int level = (int)f + 1;
-			if(level > maxLevels)
+			int level = (int) f + 1;
+			if (level > maxLevels)
 			{
 				level = maxLevels;
 			}

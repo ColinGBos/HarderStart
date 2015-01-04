@@ -1,28 +1,24 @@
-Armour
-	protection		4	Heliodor
-	fire protection		4	Pyrolusite
-	feather falling		4	Aventurine
-	blast protection	4	Nephrite
-	projectile protection	4	Hambergite
-	respiration		3	Amazonite
-	aqua affinity		1	Aquamarine
-	thorns			3	Hessonite
-	depth strider		3	Zircon
-
-Tools
-	sharpness		5	Jadeite
-	smite			5	Hematite
-	bane of arthropods	5	Spodumene
-	knockback		2	Citrine
-	fire aspect		2	Flourite
-	looting			3	Pyrite
-	efficiency		5	Kornerupine
-	silk touch		1	Prehnite
-	unbreaking		3	Dioptase
-	fortune			3	Agate
-	power			5	Variscite
-	punch			2	Almandine
-	flame			1	Pyrope
-	infinity		1	Alexandrite
-	luck of the sea		3	Goshenite
-	lure			3	.Tourmaline
+Heliodor		respiration
+Pyrolusite		bane of arthropods
+Aventurine		protection
+Nephrite		knockback
+Hambergite		sharpness
+Amazonite		projectile protection
+Aquamarine		aqua affinity
+Hessonite		power
+Jadeite			punch
+Hematite		smite
+Spodumene		luck of the sea
+Citrine			efficieny
+Flourite		fortune
+Pyrite			feather falling
+Kornerupine		lure
+Prehnite		infinity
+Dioptase		blast protection
+Agate			fire protection
+Variscite		looting
+Almandine		thorns
+Pyrope			silk touch
+Alexandrite		fire aspect
+Goshenite		unbreaking
+Tourmaline		flame

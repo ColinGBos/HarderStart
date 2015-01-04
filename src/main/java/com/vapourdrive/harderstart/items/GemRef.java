@@ -24,6 +24,10 @@ public class GemRef
 	{
 			HS_Items.gem_Prehnite, HS_Items.gem_Jadeite, HS_Items.gem_Nephrite
 	};
+	public static Item[] yellow_gems =
+	{
+			HS_Items.gem_Heliodor, HS_Items.gem_Pyrite
+	};
 	public static Item[] orange_gems =
 	{
 			HS_Items.gem_Citrine, HS_Items.gem_Hessonite
@@ -43,12 +47,12 @@ public class GemRef
 
 	public static Item[][] gem_colour =
 	{
-			white_gems, black_gems, blue_gems, tourquoise_gems, green_gems, orange_gems, red_gems, purple_gems, claret_gems
+			white_gems, black_gems, blue_gems, tourquoise_gems, green_gems, yellow_gems, orange_gems, red_gems, purple_gems, claret_gems
 	};
 
 	public static String[] gemNames =
 	{
-			"white_gem", "black_gem", "blue_gem", "tourquoise_gem", "green_gem", "orange_gem", "red_gem", "purple_gem", "claret_gem"
+			"white_gem", "black_gem", "blue_gem", "tourquoise_gem", "green_gem", "yellow_gem", "orange_gem", "red_gem", "purple_gem", "claret_gem"
 	};
 
 }
