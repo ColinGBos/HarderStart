@@ -14,28 +14,35 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class HS_WorldGenHandler implements IWorldGenerator
 {
 	private WorldGenerator FlintRockGenerator;
+	private WorldGenerator GeodeGenerator;
 
 	public HS_WorldGenHandler()
 	{
 		GameRegistry.registerWorldGenerator(this, 0);
 
 		FlintRockGenerator = new FlintRockGenerator();
+		GeodeGenerator = new GeodeGenerator();
 
 	}
 
 	@Override
-	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider)
+	public void generate(Random rand, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider)
 	{
-		int xChunk = chunkX * 16 + random.nextInt(16);
-		int zChunk = chunkZ * 16 + random.nextInt(16);
-		int chx = xChunk + random.nextInt(16);
-		int chz = zChunk + random.nextInt(16);
+		int xChunk = chunkX * 16 + rand.nextInt(16);
+		int zChunk = chunkZ * 16 + rand.nextInt(16);
+		int chx = xChunk + rand.nextInt(16);
+		int chz = zChunk + rand.nextInt(16);
 
 		BiomeGenBase Biome = world.getBiomeGenForCoords(chx, chz);
 
-		if (random.nextInt(20 - biomeMultiplyer(Biome)) == 0)
+		if (rand.nextInt(20 - biomeMultiplyer(Biome)) == 0)
 		{
-			FlintRockGenerator.generate(world, random, chx, 0, chz);
+			FlintRockGenerator.generate(world, rand, chx, 0, chz);
+		}
+		
+		if(rand.nextInt(50) == 0)
+		{
+			GeodeGenerator.generate(world, rand, chx, 10, chz);
 		}
 
 	}
