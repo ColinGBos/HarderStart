@@ -21,13 +21,13 @@ import com.vapourdrive.harderstart.HarderStart;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemEnchantmentGen extends Item
+public class ItemEnchantmentGem extends Item
 {
 	String Name;
 	Enchantment Enchantment;
 	EnumChatFormatting Colour;
 
-	public ItemEnchantmentGen(EnumChatFormatting colour, String name, Enchantment enchantment)
+	public ItemEnchantmentGem(EnumChatFormatting colour, String name, Enchantment enchantment)
 	{
 		super();
 		this.Name = name;
@@ -169,5 +169,10 @@ public class ItemEnchantmentGen extends Item
 			stack.addEnchantment(Enchantment, i);
 			list.add(stack);
 		}
+	}
+	
+	public Enchantment getGemEnchantment()
+	{
+		return this.Enchantment;
 	}
 }
