@@ -73,3 +73,15 @@ item.gem_pyrope.name=Pyrope
 item.gem_alexandrite.name=Alexandrite
 item.gem_goshenite.name=Goshenite
 item.gem_tourmaline.name=Tourmaline
+
+//Coloured gem ores
+tile.gem_rock.white_gem.name=White Gem Rock
+tile.gem_rock.black_gem.name=Black Gem Rock
+tile.gem_rock.blue_gem.name=Blue Gem Rock
+tile.gem_rock.tourquoise_gem.name=Tourquoise Gem Rock
+tile.gem_rock.orange_gem.name=Orange Gem Rock
+tile.gem_rock.red_gem.name=Red Gem Rock
+tile.gem_rock.purple_gem.name=Purple Gem Rock
+tile.gem_rock.claret_gem.name=Claret Gem Rock
+tile.gem_rock.green_gem.name=Green Gem Rock
+
