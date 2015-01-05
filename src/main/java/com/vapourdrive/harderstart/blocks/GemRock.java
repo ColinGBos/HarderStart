@@ -34,6 +34,7 @@ public class GemRock extends Block
 		this.setCreativeTab(HarderStart.tabGem);
 		this.setHardness(0.4F);
 		this.setStepSound(soundTypeStone);
+		this.setLightLevel(1.0F);
 	}
 
 	@Override
@@ -150,12 +151,16 @@ public class GemRock extends Block
 		{
 			f = (world.rand.nextFloat() + ((float) maxLevels) / (10.0f)) + ((float) fortune / (5.0f)) * maxLevels;
 
-			int level = (int) f + 1;
+			int level = (int) f;
+
 			if (level > maxLevels)
 			{
 				level = maxLevels;
 			}
-			stack.addEnchantment(Enchantment, level);
+			if(level > 0)
+			{
+				stack.addEnchantment(Enchantment, level);
+			}
 		}
 
 		if (stack != null)
