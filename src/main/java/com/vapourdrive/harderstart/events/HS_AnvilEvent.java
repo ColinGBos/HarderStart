@@ -1,6 +1,5 @@
 package com.vapourdrive.harderstart.events;
 
-import java.util.Iterator;
 import java.util.Map;
 
 import net.minecraft.enchantment.Enchantment;
@@ -9,9 +8,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.AnvilUpdateEvent;
 
-import org.apache.logging.log4j.Level;
-
-import com.vapourdrive.harderstart.HarderStart;
 import com.vapourdrive.harderstart.items.ItemEnchantmentGem;
 
 import cpw.mods.fml.common.eventhandler.EventPriority;
@@ -60,17 +56,15 @@ public class HS_AnvilEvent
 		if (!(leftItem instanceof ItemEnchantmentGem) && rightItem instanceof ItemEnchantmentGem)
 		{
 			ItemEnchantmentGem gem = (ItemEnchantmentGem) rightItem;
-			if (leftInput.isItemEnchanted() && !rightInput.isItemEnchanted())
+			if (!rightInput.isItemEnchanted())
 			{
 				if (leftItem.isItemTool(leftInput) && leftInput.getItemDamage() < (leftInput.getMaxDamage() / 4))
 				{
-					HarderStart.log.log(Level.INFO, "handleEnchantGem called");
 					handleEnchantGem(leftInput, leftItem, rightInput, gem, event);
 				}
 			}
-			else if (!leftInput.isItemEnchanted() && rightInput.isItemEnchanted())
+			else if (rightInput.isItemEnchanted())
 			{
-				HarderStart.log.log(Level.INFO, "handleEnchantTool called");
 				handleEnchantTool(leftInput, leftItem, rightInput, gem, event);
 			}
 		}
@@ -79,31 +73,42 @@ public class HS_AnvilEvent
 
 	public void handleEnchantGem(ItemStack toolStack, Item tool, ItemStack gemStack, ItemEnchantmentGem gem, AnvilUpdateEvent event)
 	{
-		event.materialCost = 1;
 		Enchantment enchant = gem.getGemEnchantment();
-		HarderStart.log.log(Level.INFO, EnchantmentHelper.getEnchantments(toolStack));
+		int enchantID = enchant.effectId;
 
 		Map enchantMap = EnchantmentHelper.getEnchantments(toolStack);
 
-		int enchantID = enchant.effectId;
-		if (EnchantmentHelper.getEnchantments(toolStack).containsKey(enchantID))
+		if (enchantMap.containsKey(enchantID))
 		{
 			int level = ((Integer) enchantMap.get(enchantID));
-			HarderStart.log.log(Level.INFO, "contains enchant: " + enchant);
-			event.cost = getEnchantmentCost(enchant, level);
-			event.materialCost = 1;
+
 			ItemStack outputStack = new ItemStack(gem);
 			outputStack.addEnchantment(enchant, level);
+
 			event.output = outputStack;
-			
+			event.cost = getEnchantmentCost(enchant, level);
+			event.materialCost = 1;
 		}
 
 	}
 
 	public void handleEnchantTool(ItemStack toolStack, Item tool, ItemStack gemStack, ItemEnchantmentGem gem, AnvilUpdateEvent event)
 	{
-		// TODO Auto-generated method stub
-
+		Enchantment enchant = gem.getGemEnchantment();
+		int enchantID = enchant.effectId;
+		
+		Map enchantMap = EnchantmentHelper.getEnchantments(gemStack);
+		
+		if (!EnchantmentHelper.getEnchantments(toolStack).containsKey(enchantID) && enchantMap.containsKey(enchantID) && enchant.canApply(toolStack))
+		{
+			int level = ((Integer) enchantMap.get(enchantID));
+			
+			ItemStack outputStack = toolStack.copy();
+			outputStack.addEnchantment(enchant, level);
+			event.output = outputStack;
+			event.cost = getEnchantmentCost(enchant, level);
+			event.materialCost = 1;
+		}
 	}
 
 	public static int getEnchantmentCost(Enchantment enchant, int level)
