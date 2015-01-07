@@ -81,7 +81,9 @@ public class HS_Items
 	public static Item gem_Goshenite;
 	public static Item gem_Tourmaline;
 
-
+	//foods
+	public static Item food_cricket;
+	public static Item food_grub;
 
 
 	public static void init()
@@ -155,7 +157,9 @@ public class HS_Items
 		gem_Goshenite = new ItemEnchantmentGem(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.GosheniteGemName, Enchantment.unbreaking);
 		gem_Tourmaline = new ItemEnchantmentGem(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.TourmalineGemName, Enchantment.flame);
 
-
+		//Foods
+		food_grub = new HS_ItemFood(1, 0.8F, false, HS_ItemInfo.GrubName);
+		food_cricket = new HS_ItemFood(1, 0.8F, false, HS_ItemInfo.CricketName);
 
 		GameRegistry.registerItem(flint_hatchet, HS_ItemInfo.FlintHatchetName);
 		GameRegistry.registerItem(flint_spear, HS_ItemInfo.FlintSpearName);
@@ -226,7 +230,8 @@ public class HS_Items
 		GameRegistry.registerItem(gem_Goshenite, HS_ItemInfo.GosheniteGemName);
 		GameRegistry.registerItem(gem_Tourmaline, HS_ItemInfo.TourmalineGemName);
 
-
+		GameRegistry.registerItem(food_grub, HS_ItemInfo.GrubName);
+		GameRegistry.registerItem(food_cricket, HS_ItemInfo.CricketName);
 	}
 
 	public static void registerRecipes()

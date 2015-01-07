@@ -48,6 +48,10 @@ item.oreMithril_rubble.name=Mithril Ore Rubble
 item.orePlatinum_rubble.name=Platinum Ore Rubble
 item.oreQuartz_rubble.name=Quartz Ore Rubble
 
+//foods
+item.cricket.name=Cricket
+item.grub.name=Grub
+
 //gems
 item.gem_heliodor.name=Heliodor
 item.gem_pyrolusite.name=Pyrolusite

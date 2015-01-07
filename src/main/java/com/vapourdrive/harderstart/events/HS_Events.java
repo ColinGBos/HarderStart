@@ -11,7 +11,7 @@ public class HS_Events
 	public static void init()
 	{
 		MinecraftForge.EVENT_BUS.register(new HS_BreakSpeed());
-		MinecraftForge.EVENT_BUS.register(new HS_AddLeaveDrop());
+		MinecraftForge.EVENT_BUS.register(new HS_AddVanillaDrop());
 		MinecraftForge.EVENT_BUS.register(new HS_PlayerAttackEntity());
 		MinecraftForge.EVENT_BUS.register(new HS_ItemInfoAdditions());
 		MinecraftForge.EVENT_BUS.register(new HS_EntityDropEvent());
