@@ -31,10 +31,10 @@ public class Knife extends CuttingKnifeBase
 	{
 		itemIcon = register.registerIcon(HS_ModInfo.RESOURSE_LOCATION + name);
 	}
-	
+
 	@Override
-    @SideOnly(Side.CLIENT)
-    public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean bool) 
+	@SideOnly(Side.CLIENT)
+	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean bool)
 	{
 		int max = stack.getMaxDamage();
 		list.add(EnumChatFormatting.GREEN + "Durability: " + (max - stack.getItemDamage()) + "/" + max);

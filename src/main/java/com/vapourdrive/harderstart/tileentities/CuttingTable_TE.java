@@ -35,8 +35,8 @@ public class CuttingTable_TE extends TileEntity implements ISidedInventory
 	}
 
 	/**
-	 * Whenever a stack gets its size decreased this is called
-	 * currently used to update the recipe
+	 * Whenever a stack gets its size decreased this is called currently used to
+	 * update the recipe
 	 */
 	@Override
 	public ItemStack decrStackSize(int slot, int decrement)
@@ -66,8 +66,10 @@ public class CuttingTable_TE extends TileEntity implements ISidedInventory
 	}
 
 	/**
-	 * checks the result slots to see if they are empty, if they marks ingredients as not decreased
-	 * TODO - rework, broken implementation of slot stack manipulation is broken
+	 * checks the result slots to see if they are empty, if they marks
+	 * ingredients as not decreased TODO - rework, broken implementation of slot
+	 * stack manipulation is broken
+	 * 
 	 * @param slot
 	 */
 	public void shouldReset(int slot)
@@ -99,9 +101,9 @@ public class CuttingTable_TE extends TileEntity implements ISidedInventory
 		{
 			int Damage = tool.getItemDamage();
 			NBTTagCompound tag = tool.getTagCompound();
-			
+
 			ItemStack returnedtool = new ItemStack(tool.getItem(), 1, Damage + 1);
-			if(tag != null)
+			if (tag != null)
 			{
 				returnedtool.stackTagCompound = tag;
 			}
@@ -132,7 +134,8 @@ public class CuttingTable_TE extends TileEntity implements ISidedInventory
 	}
 
 	/**
-	 * force crafts a stack when you close the inventory, not guaranteed to work unfortunately
+	 * force crafts a stack when you close the inventory, not guaranteed to work
+	 * unfortunately
 	 */
 	@Override
 	public ItemStack getStackInSlotOnClosing(int slot)
@@ -304,6 +307,7 @@ public class CuttingTable_TE extends TileEntity implements ISidedInventory
 
 	/**
 	 * places result stacks
+	 * 
 	 * @param resultArray
 	 * @param resultNumber
 	 */

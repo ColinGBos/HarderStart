@@ -28,8 +28,9 @@ import com.vapourdrive.harderstart.utils.ItemStackUtils;
 public class CuttingTableRecipeParser
 {
 	/**
-	 * preps the file from the name instantiates DOM documentbuilderfactory and document builder
-	 * sends the document to get parsed
+	 * preps the file from the name instantiates DOM documentbuilderfactory and
+	 * document builder sends the document to get parsed
+	 * 
 	 * @param fileName
 	 */
 	public static void init(String fileName)
@@ -70,8 +71,8 @@ public class CuttingTableRecipeParser
 	}
 
 	/**
-	 * Creates a nodelist of recipes (from tag "recipe")
-	 * loops through the list of recipe nodes sending them for reading
+	 * Creates a nodelist of recipes (from tag "recipe") loops through the list
+	 * of recipe nodes sending them for reading
 	 * 
 	 * @param document
 	 * @param fileName
@@ -104,6 +105,7 @@ public class CuttingTableRecipeParser
 
 	/**
 	 * Breaks recipe node up into tool class, input and output
+	 * 
 	 * @param recipeElement
 	 * @param recipeName
 	 */
@@ -151,6 +153,7 @@ public class CuttingTableRecipeParser
 
 	/**
 	 * switches through input number to determine desired tool
+	 * 
 	 * @param tool
 	 * @return
 	 */
@@ -182,6 +185,7 @@ public class CuttingTableRecipeParser
 
 	/**
 	 * Breaks itemstack node up into modID, name, number and meta
+	 * 
 	 * @param input
 	 * @param recipeName
 	 * @return
@@ -207,7 +211,9 @@ public class CuttingTableRecipeParser
 	}
 
 	/**
-	 * Same as getInputFromNode except with a loop and nodelist for the itemstacks
+	 * Same as getInputFromNode except with a loop and nodelist for the
+	 * itemstacks
+	 * 
 	 * @param outputs
 	 * @param recipeName
 	 * @return
@@ -260,8 +266,9 @@ public class CuttingTableRecipeParser
 	}
 
 	/**
-	 * Takes strings from the itemstack tag
-	 * Exists to deal pleasantly with possible null values for number and metadata
+	 * Takes strings from the itemstack tag Exists to deal pleasantly with
+	 * possible null values for number and metadata
+	 * 
 	 * @param modID
 	 * @param itemName
 	 * @param number
@@ -309,6 +316,7 @@ public class CuttingTableRecipeParser
 
 	/**
 	 * Sends off the info to get added in as a recipe
+	 * 
 	 * @param tool
 	 * @param ingredient
 	 * @param results

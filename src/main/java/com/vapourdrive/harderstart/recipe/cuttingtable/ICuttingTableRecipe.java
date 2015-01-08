@@ -24,6 +24,6 @@ public interface ICuttingTableRecipe
 	ItemStack[] getRecipeOutput();
 
 	ItemStack getInput();
-	
+
 	Class getTool();
 }

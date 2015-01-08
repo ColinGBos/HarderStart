@@ -12,8 +12,8 @@ import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 public class HS_PlayerAttackEntity
 {
 	/**
-	 * Makes stick truly a rudimentary weapon
-	 * TODO add damage to stick info
+	 * Makes stick truly a rudimentary weapon TODO add damage to stick info
+	 * 
 	 * @param event
 	 */
 	@SubscribeEvent(priority = EventPriority.NORMAL)

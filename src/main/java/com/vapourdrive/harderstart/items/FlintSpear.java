@@ -23,6 +23,7 @@ public class FlintSpear extends Item
 
 	/**
 	 * TODO - implement spear throwing
+	 * 
 	 * @param material
 	 */
 	FlintSpear(Item.ToolMaterial material)
@@ -133,20 +134,22 @@ public class FlintSpear extends Item
 			f = 1.0F;
 		}
 
-//		EntityFlintSpear entityspear = new EntityFlintSpear(world, player, f * 2.0F);
-//
-//		if (f == 1.0F)
-//		{
-//			entityspear.setIsCritical(true);
-//		}
-//
-//		stack.damageItem(1, player);
-//		world.playSoundAtEntity(player, "random.bow", 1.0F, 1.0F / (itemRand.nextFloat() * 0.4F + 1.2F) + f * 0.5F);
-//
-//		if (!world.isRemote)
-//		{
-//			world.spawnEntityInWorld(entityspear);
-//		}
+		// EntityFlintSpear entityspear = new EntityFlintSpear(world, player, f
+		// * 2.0F);
+		//
+		// if (f == 1.0F)
+		// {
+		// entityspear.setIsCritical(true);
+		// }
+		//
+		// stack.damageItem(1, player);
+		// world.playSoundAtEntity(player, "random.bow", 1.0F, 1.0F /
+		// (itemRand.nextFloat() * 0.4F + 1.2F) + f * 0.5F);
+		//
+		// if (!world.isRemote)
+		// {
+		// world.spawnEntityInWorld(entityspear);
+		// }
 	}
 
 	@Override
@@ -162,7 +165,7 @@ public class FlintSpear extends Item
 	@Override
 	public ItemStack onItemRightClick(ItemStack stack, World world, EntityPlayer player)
 	{
-		//player.setItemInUse(stack, this.getMaxItemUseDuration(stack));
+		// player.setItemInUse(stack, this.getMaxItemUseDuration(stack));
 
 		return stack;
 	}

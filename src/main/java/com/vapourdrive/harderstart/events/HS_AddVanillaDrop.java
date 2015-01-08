@@ -2,21 +2,23 @@ package com.vapourdrive.harderstart.events;
 
 import java.util.Random;
 
-import com.vapourdrive.harderstart.items.HS_Items;
-
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.oredict.OreDictionary;
+
+import com.vapourdrive.harderstart.items.HS_Items;
+
 import cpw.mods.fml.common.eventhandler.EventPriority;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 
 public class HS_AddVanillaDrop
 {
 	/**
-	 * Simply causes sticks to fall from some leaves
-	 * Oredictionaried leaves that is
+	 * Simply causes sticks to fall from some leaves Oredictionaried leaves that
+	 * is
+	 * 
 	 * @param event
 	 */
 	@SubscribeEvent(priority = EventPriority.NORMAL)
@@ -34,18 +36,18 @@ public class HS_AddVanillaDrop
 				{
 					event.drops.add(new ItemStack(Items.stick));
 				}
-				else if(event.harvester.getCurrentEquippedItem() == null && option < 10)
+				else if (event.harvester.getCurrentEquippedItem() == null && option < 10)
 				{
 					event.drops.add(new ItemStack(HS_Items.food_cricket));
 				}
 			}
 			else if (event.block == Blocks.dirt || event.block == Blocks.grass)
 			{
-				if(event.harvester.getCurrentEquippedItem() == null && random.nextFloat() > 0.5F)
+				if (event.harvester.getCurrentEquippedItem() == null && random.nextFloat() > 0.5F)
 				{
 					event.drops.add(new ItemStack(HS_Items.food_grub));
 				}
-				
+
 			}
 		}
 		return;

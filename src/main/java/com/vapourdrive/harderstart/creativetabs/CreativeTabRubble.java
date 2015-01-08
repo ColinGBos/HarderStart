@@ -1,11 +1,12 @@
 package com.vapourdrive.harderstart.creativetabs;
 
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
 import com.vapourdrive.harderstart.items.HS_Items;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 
 public class CreativeTabRubble extends CreativeTabs
 {
@@ -29,13 +30,13 @@ public class CreativeTabRubble extends CreativeTabs
 	{
 		return "Rubble";
 	}
-	
+
 	@Override
 	public Item getTabIconItem()
 	{
 		return HS_Items.stone_rubble;
 	}
-	
+
 	@Override
 	public boolean hasSearchBar()
 	{

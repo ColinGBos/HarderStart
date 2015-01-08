@@ -2,8 +2,6 @@ package com.vapourdrive.harderstart.blocks;
 
 import java.util.Random;
 
-import org.apache.logging.log4j.Level;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
@@ -18,6 +16,8 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
+
+import org.apache.logging.log4j.Level;
 
 import com.vapourdrive.harderstart.HS_ModInfo;
 import com.vapourdrive.harderstart.HarderStart;
@@ -80,8 +80,8 @@ public class FoodBucketBlock extends Block implements ITileEntityProvider
 	}
 
 	/**
-	 * The food bucket can be filled, picked up and size scoped
-	 * TODO break into smaller functions
+	 * The food bucket can be filled, picked up and size scoped TODO break into
+	 * smaller functions
 	 */
 	@Override
 	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitx, float hity, float hitz)

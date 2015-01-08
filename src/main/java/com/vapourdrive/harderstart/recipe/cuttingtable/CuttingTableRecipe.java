@@ -63,7 +63,7 @@ public class CuttingTableRecipe implements ICuttingTableRecipe
 	{
 		return this.recipeItem;
 	}
-	
+
 	@Override
 	public Class getTool()
 	{

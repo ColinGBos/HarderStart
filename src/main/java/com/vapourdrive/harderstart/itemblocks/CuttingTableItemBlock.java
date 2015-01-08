@@ -7,6 +7,7 @@ public class CuttingTableItemBlock extends HS_BaseItemBlock
 
 	/**
 	 * TODO add specific item info
+	 * 
 	 * @param block
 	 */
 	public CuttingTableItemBlock(Block block)

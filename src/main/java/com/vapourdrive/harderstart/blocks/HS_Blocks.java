@@ -25,13 +25,13 @@ public class HS_Blocks
 
 		GameRegistry.registerBlock(BlockFlint, FlintItemBlock.class, HS_BlockInfo.FlintName);
 		GameRegistry.registerBlock(CuttingTable, CuttingTableItemBlock.class, HS_BlockInfo.CuttingTableName);
-		GameRegistry.registerBlock(FoodBucketBlock, FoodBucketItemBlock.class,  HS_BlockInfo.FoodBucketBlockName);
+		GameRegistry.registerBlock(FoodBucketBlock, FoodBucketItemBlock.class, HS_BlockInfo.FoodBucketBlockName);
 		GameRegistry.registerBlock(GemRock, GemItemBlock.class, HS_BlockInfo.GemBlockName);
 	}
 
 	public static void registerRecipes()
 	{
-		
+
 	}
 
 }

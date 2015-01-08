@@ -19,8 +19,8 @@ public class HS_ItemInfo
 	public static String DiamondMalletName = "diamond_mallet";
 	public static String GrubName = "grub";
 	public static String CricketName = "cricket";
-	
-	//rubbles
+
+	// rubbles
 	public static String RubbleName = "stone_rubble";
 	public static String IronOreRubbleName = "oreIron_rubble";
 	public static String CoalOreRubbleName = "oreCoal_rubble";
@@ -48,8 +48,8 @@ public class HS_ItemInfo
 	public static String PlatinumOreRubbleName = "orePlatinum_rubble";
 	public static String EndStoneRubbleName = "stoneEnd_rubble";
 	public static String MithrilOreRubbleName = "oreMithril_rubble";
-	
-	//gems
+
+	// gems
 	public static String HeliodorGemName = "gem_heliodor";
 	public static String PyrolusiteGemName = "gem_pyrolusite";
 	public static String AventurineGemName = "gem_aventurine";

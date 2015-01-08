@@ -19,9 +19,9 @@ import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 public class HS_EntityDropEvent
 {
 	/**
-	 * Case by case dealings with vanilla farm mob drops
-	 * TODO baby animals still drop things
-	 * TODO implement some sort of looting reward mechanic
+	 * Case by case dealings with vanilla farm mob drops TODO baby animals still
+	 * drop things TODO implement some sort of looting reward mechanic
+	 * 
 	 * @param event
 	 */
 	@SubscribeEvent(priority = EventPriority.LOWEST)
@@ -33,7 +33,7 @@ public class HS_EntityDropEvent
 		}
 		Entity entity = event.entity;
 		Random rand = new Random();
-		
+
 		if (entity instanceof EntityCow)
 		{
 			event.drops.clear();

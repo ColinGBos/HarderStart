@@ -2,8 +2,6 @@ package com.vapourdrive.harderstart.items;
 
 import java.util.Set;
 
-import org.apache.logging.log4j.Level;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -15,6 +13,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;
 import net.minecraft.world.World;
 import net.minecraftforge.oredict.OreDictionary;
+
+import org.apache.logging.log4j.Level;
 
 import com.google.common.collect.Sets;
 import com.vapourdrive.harderstart.HS_ModInfo;
@@ -129,7 +129,8 @@ public class Mallet extends ItemTool
 	 * ints for the block loops through the array and searches for a matched
 	 * rubble item, and spawns it (most loop 1) total rubble drop count remains
 	 * static
-	 * @param stack 
+	 * 
+	 * @param stack
 	 * 
 	 * @param world
 	 * @param block
@@ -147,7 +148,7 @@ public class Mallet extends ItemTool
 		int toolHarvestLevel = this.toolMaterial.getHarvestLevel();
 		ItemStack rubble = null;
 		Item defaultRubble = getDefaultRubble(world, block, entity);
-		
+
 		int[] oreIDs = OreDictionary.getOreIDs(new ItemStack(block, 1, metadata));
 		if (oreIDs != null && toolHarvestLevel >= block.getHarvestLevel(metadata))
 		{
@@ -156,8 +157,7 @@ public class Mallet extends ItemTool
 				HarderStart.log.log(Level.INFO, OreDictionary.getOreName(oreIDs[i]));
 				bonus = world.rand.nextInt(EnchantmentHelper.getFortuneModifier(entity) + 1);
 
-				rubble = ItemStackUtils.getItemStackFromString("harderstart", OreDictionary.getOreName(oreIDs[i]) + "_rubble",
-						1 + bonus);
+				rubble = ItemStackUtils.getItemStackFromString("harderstart", OreDictionary.getOreName(oreIDs[i]) + "_rubble", 1 + bonus);
 				if (rubble != null)
 				{
 					RandomUtils.spawnItem(world, x, y, z, rubble, 0.05F);
@@ -166,8 +166,9 @@ public class Mallet extends ItemTool
 			}
 		}
 
-		// check exists to make sure stone doesn't drop twice as much rubble as it should
-		if(rubble != null && rubble.getItem() != getDefaultRubble(world, block, entity))
+		// check exists to make sure stone doesn't drop twice as much rubble as
+		// it should
+		if (rubble != null && rubble.getItem() != getDefaultRubble(world, block, entity))
 		{
 			RandomUtils.spawnItem(world, x, y, z, new ItemStack(defaultRubble, 7), 0.7F);
 		}

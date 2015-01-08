@@ -1,12 +1,13 @@
 package com.vapourdrive.harderstart.items;
 
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.item.Item;
+
 import com.vapourdrive.harderstart.HS_ModInfo;
 import com.vapourdrive.harderstart.HarderStart;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.item.Item;
 
 public class ItemRock extends Item
 {

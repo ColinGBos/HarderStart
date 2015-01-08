@@ -39,7 +39,7 @@ public class FoodBucketItemBlock extends HS_BaseItemBlock
 		list.add("Stores food to eat, click with food to fill");
 		list.add("Food needs to have over 0.6 saturation level");
 	}
-	
+
 	@Override
 	public void addImportant(ItemStack stack, EntityPlayer player, List list, boolean bool)
 	{

@@ -18,8 +18,8 @@ public class CuttingTableRecipeFiller
 	public static List<String> recipeList = new ArrayList<String>();
 
 	/**
-	 * sets up the files for parsing
-	 * creates them if necessary, ensures their existence, sends for parsing
+	 * sets up the files for parsing creates them if necessary, ensures their
+	 * existence, sends for parsing
 	 */
 	public static void init()
 	{
@@ -35,14 +35,15 @@ public class CuttingTableRecipeFiller
 
 		createFile(CoreConfigRecipeFile, true, Location);
 		createFile(UserConfigRecipeFile, false, Location);
-		
+
 		CuttingTableRecipeParser.init(UserFileName);
 		CuttingTableRecipeParser.init(CoreFileName);
 	}
 
 	/**
-	 * creates the file if it needs to be done, replace flag is flown
-	 * sets a new file evertime
+	 * creates the file if it needs to be done, replace flag is flown sets a new
+	 * file evertime
+	 * 
 	 * @param file
 	 * @param replace
 	 * @param ResourceFileLocation

@@ -9,7 +9,6 @@ public class HS_BlockInfo
 	public static final String FoodBucketBlockName = "food_bucket_block";
 	public static final String GemBlockName = "gem_rock";
 
-
 	// BlockIcons (more than one per block)
 	public static final String CuttingTableTop = "cuttingTableTop";
 	public static final String CuttingTableBottom = "cuttingTableBottom";

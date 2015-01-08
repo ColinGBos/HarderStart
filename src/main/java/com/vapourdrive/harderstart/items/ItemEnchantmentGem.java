@@ -79,8 +79,8 @@ public class ItemEnchantmentGem extends Item
 	}
 
 	/**
-	 * Adds the enchantment info for the stack to the tooltip
-	 * suppressed warning is irritating, meh, same as vanilla's implementation
+	 * Adds the enchantment info for the stack to the tooltip suppressed warning
+	 * is irritating, meh, same as vanilla's implementation
 	 */
 	@SuppressWarnings("static-access")
 	@SideOnly(Side.CLIENT)
@@ -96,10 +96,10 @@ public class ItemEnchantmentGem extends Item
 				short shortID = nbttaglist.getCompoundTagAt(i).getShort("id");
 				short shortLevel = nbttaglist.getCompoundTagAt(i).getShort("lvl");
 
-                if (Enchantment.enchantmentsList[shortID] != null)
-                {
-                    list.add(Enchantment.enchantmentsList[shortID].getTranslatedName(shortLevel));
-                }
+				if (Enchantment.enchantmentsList[shortID] != null)
+				{
+					list.add(Enchantment.enchantmentsList[shortID].getTranslatedName(shortLevel));
+				}
 			}
 		}
 	}
@@ -170,7 +170,7 @@ public class ItemEnchantmentGem extends Item
 			list.add(stack);
 		}
 	}
-	
+
 	public Enchantment getGemEnchantment()
 	{
 		return this.Enchantment;

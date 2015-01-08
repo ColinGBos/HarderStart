@@ -52,7 +52,8 @@ public class GemRef
 
 	public static String[] gemNames =
 	{
-			"white_gem", "black_gem", "blue_gem", "tourquoise_gem", "green_gem", "yellow_gem", "orange_gem", "red_gem", "purple_gem", "claret_gem"
+			"white_gem", "black_gem", "blue_gem", "tourquoise_gem", "green_gem", "yellow_gem", "orange_gem", "red_gem", "purple_gem",
+			"claret_gem"
 	};
 
 }

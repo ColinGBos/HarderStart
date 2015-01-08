@@ -70,7 +70,8 @@ public class BlockFlint extends HS_BaseBlock
 	}
 
 	/**
-	 * You can "harvest" this without the need to punch it, just pick it up off the ground
+	 * You can "harvest" this without the need to punch it, just pick it up off
+	 * the ground
 	 */
 	@Override
 	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float fx, float fy, float fz)

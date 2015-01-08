@@ -25,8 +25,8 @@ public class HS_Items
 	public static Item rock_mallet;
 	public static Item diamond_mallet;
 	public static Item iron_mallet;
-	
-	//rubbles
+
+	// rubbles
 	public static Item stone_rubble;
 	public static Item stoneEnd_rubble;
 	public static Item netherrack_rubble;
@@ -54,8 +54,8 @@ public class HS_Items
 	public static Item yelloriteOre_rubble;
 	public static Item platinumOre_rubble;
 	public static Item mithrilOre_rubble;
-	
-	//Gems
+
+	// Gems
 	public static Item gem_Heliodor;
 	public static Item gem_Pyrolusite;
 	public static Item gem_Aventurine;
@@ -81,10 +81,9 @@ public class HS_Items
 	public static Item gem_Goshenite;
 	public static Item gem_Tourmaline;
 
-	//foods
+	// foods
 	public static Item food_cricket;
 	public static Item food_grub;
-
 
 	public static void init()
 	{
@@ -101,8 +100,8 @@ public class HS_Items
 		rock_mallet = new Mallet(FLINT, HS_ItemInfo.RockMalletName);
 		iron_mallet = new Mallet(ToolMaterial.IRON, HS_ItemInfo.IronMalletName);
 		diamond_mallet = new Mallet(ToolMaterial.EMERALD, HS_ItemInfo.DiamondMalletName);
-		
-		//Rubbles
+
+		// Rubbles
 		stone_rubble = new ItemRubble(HS_ItemInfo.RubbleName);
 		ironOre_rubble = new ItemRubble(HS_ItemInfo.IronOreRubbleName);
 		coalOre_rubble = new ItemRubble(HS_ItemInfo.CoalOreRubbleName);
@@ -130,14 +129,15 @@ public class HS_Items
 		platinumOre_rubble = new ItemRubble(HS_ItemInfo.PlatinumOreRubbleName);
 		mithrilOre_rubble = new ItemRubble(HS_ItemInfo.MithrilOreRubbleName);
 		quartzOre_rubble = new ItemRubble(HS_ItemInfo.QuartzOreRubbleName);
-		
-		//Gems
+
+		// Gems
 		gem_Heliodor = new ItemEnchantmentGem(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HeliodorGemName, Enchantment.respiration);
 		gem_Pyrolusite = new ItemEnchantmentGem(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.PyrolusiteGemName, Enchantment.baneOfArthropods);
 		gem_Aventurine = new ItemEnchantmentGem(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.AventurineGemName, Enchantment.protection);
 		gem_Nephrite = new ItemEnchantmentGem(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.NephriteGemName, Enchantment.knockback);
 		gem_Hambergite = new ItemEnchantmentGem(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HambergiteGemName, Enchantment.sharpness);
-		gem_Amazonite = new ItemEnchantmentGem(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.AmazoniteGemName, Enchantment.projectileProtection);
+		gem_Amazonite = new ItemEnchantmentGem(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.AmazoniteGemName,
+				Enchantment.projectileProtection);
 		gem_Aquamarine = new ItemEnchantmentGem(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.AquamarineGemName, Enchantment.aquaAffinity);
 		gem_Hessonite = new ItemEnchantmentGem(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.HessoniteGemName, Enchantment.power);
 		gem_Jadeite = new ItemEnchantmentGem(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.JadeiteGemName, Enchantment.punch);
@@ -157,7 +157,7 @@ public class HS_Items
 		gem_Goshenite = new ItemEnchantmentGem(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.GosheniteGemName, Enchantment.unbreaking);
 		gem_Tourmaline = new ItemEnchantmentGem(EnumChatFormatting.DARK_PURPLE, HS_ItemInfo.TourmalineGemName, Enchantment.flame);
 
-		//Foods
+		// Foods
 		food_grub = new HS_ItemFood(1, 0.8F, false, HS_ItemInfo.GrubName);
 		food_cricket = new HS_ItemFood(1, 0.8F, false, HS_ItemInfo.CricketName);
 
@@ -175,8 +175,8 @@ public class HS_Items
 		GameRegistry.registerItem(stone_rubble, HS_ItemInfo.RubbleName);
 		GameRegistry.registerItem(iron_mallet, HS_ItemInfo.IronMalletName);
 		GameRegistry.registerItem(diamond_mallet, HS_ItemInfo.DiamondMalletName);
-		
-		//rubbles
+
+		// rubbles
 		GameRegistry.registerItem(ironOre_rubble, HS_ItemInfo.IronOreRubbleName);
 		GameRegistry.registerItem(coalOre_rubble, HS_ItemInfo.CoalOreRubbleName);
 		GameRegistry.registerItem(goldOre_rubble, HS_ItemInfo.GoldOreRubbleName);
@@ -203,8 +203,8 @@ public class HS_Items
 		GameRegistry.registerItem(platinumOre_rubble, HS_ItemInfo.PlatinumOreRubbleName);
 		GameRegistry.registerItem(mithrilOre_rubble, HS_ItemInfo.MithrilOreRubbleName);
 		GameRegistry.registerItem(quartzOre_rubble, HS_ItemInfo.QuartzOreRubbleName);
-		
-		//gems
+
+		// gems
 		GameRegistry.registerItem(gem_Heliodor, HS_ItemInfo.HeliodorGemName);
 		GameRegistry.registerItem(gem_Pyrolusite, HS_ItemInfo.PyrolusiteGemName);
 		GameRegistry.registerItem(gem_Aventurine, HS_ItemInfo.AventurineGemName);

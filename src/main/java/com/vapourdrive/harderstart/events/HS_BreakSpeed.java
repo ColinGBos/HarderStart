@@ -14,9 +14,10 @@ import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 public class HS_BreakSpeed
 {
 	/**
-	 * Damages the player if they try to punch certain blocks
-	 * Slow then down while punching other
-	 * TODO consider moving from block materials to block hardnesses
+	 * Damages the player if they try to punch certain blocks Slow then down
+	 * while punching other TODO consider moving from block materials to block
+	 * hardnesses
+	 * 
 	 * @param event
 	 */
 	@SubscribeEvent(priority = EventPriority.HIGHEST)

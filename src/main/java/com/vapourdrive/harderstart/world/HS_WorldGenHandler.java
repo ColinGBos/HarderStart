@@ -39,8 +39,8 @@ public class HS_WorldGenHandler implements IWorldGenerator
 		{
 			FlintRockGenerator.generate(world, rand, chx, 0, chz);
 		}
-		
-		if(rand.nextInt(50) == 0)
+
+		if (rand.nextInt(50) == 0)
 		{
 			GeodeGenerator.generate(world, rand, chx, 10, chz);
 		}
@@ -48,8 +48,9 @@ public class HS_WorldGenHandler implements IWorldGenerator
 	}
 
 	/**
-	 * returns different spawn rates for different biomes
-	 * TODO find a cleaner method of implementation, poor case-by-case
+	 * returns different spawn rates for different biomes TODO find a cleaner
+	 * method of implementation, poor case-by-case
+	 * 
 	 * @param biome
 	 * @return
 	 */

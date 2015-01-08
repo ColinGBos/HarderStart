@@ -61,7 +61,7 @@ public class HarderStart
 		HS_Items.init();
 		HS_Blocks.init();
 		HS_Entities.init();
-		//ClientProxy.initRenders();
+		// ClientProxy.initRenders();
 		HS_TileEntities.init();
 
 		new HS_WorldGenHandler();

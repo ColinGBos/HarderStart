@@ -10,6 +10,7 @@ public class HSMainConfig
 
 	/**
 	 * TODO config options
+	 * 
 	 * @param hsMainConfig
 	 */
 	public static void init(File hsMainConfig)

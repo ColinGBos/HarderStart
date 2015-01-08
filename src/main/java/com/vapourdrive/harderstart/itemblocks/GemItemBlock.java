@@ -2,13 +2,13 @@ package com.vapourdrive.harderstart.itemblocks;
 
 import java.util.List;
 
-import com.vapourdrive.harderstart.HarderStart;
-import com.vapourdrive.harderstart.items.GemRef;
-
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
+
+import com.vapourdrive.harderstart.HarderStart;
+import com.vapourdrive.harderstart.items.GemRef;
 
 public class GemItemBlock extends HS_BaseItemBlock
 {
@@ -19,7 +19,7 @@ public class GemItemBlock extends HS_BaseItemBlock
 		this.setCreativeTab(HarderStart.tabGem);
 		this.hasSubtypes = true;
 	}
-	
+
 	@Override
 	public int getMetadata(int Meta)
 	{
@@ -46,9 +46,9 @@ public class GemItemBlock extends HS_BaseItemBlock
 	public void addDetails(ItemStack stack, EntityPlayer player, List list, boolean useExtraInformation)
 	{
 		list.add("Drops various gems:");
-		for(int i = 0; i < GemRef.gem_colour[stack.getItemDamage()].length; i++)
+		for (int i = 0; i < GemRef.gem_colour[stack.getItemDamage()].length; i++)
 		{
-			list.add(StatCollector.translateToLocal(GemRef.gem_colour[stack.getItemDamage()][i].getUnlocalizedName()+".name"));
+			list.add(StatCollector.translateToLocal(GemRef.gem_colour[stack.getItemDamage()][i].getUnlocalizedName() + ".name"));
 		}
 		return;
 	}

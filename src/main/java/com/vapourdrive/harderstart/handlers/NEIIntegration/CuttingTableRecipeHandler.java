@@ -26,26 +26,29 @@ public class CuttingTableRecipeHandler extends TemplateRecipeHandler
 {
 	public class CTRecipe extends TemplateRecipeHandler.CachedRecipe
 	{
-		public Item[] sampleTools = {HS_Items.flint_knife, Items.iron_axe, Items.iron_shovel, Items.iron_pickaxe};
+		public Item[] sampleTools =
+		{
+				HS_Items.flint_knife, Items.iron_axe, Items.iron_shovel, Items.iron_pickaxe
+		};
 		public PositionedStack ingredient;
 		public ArrayList<PositionedStack> tool;
 		public ArrayList<PositionedStack> otherOutputs;
 		public PositionedStack output;
 
-//		public CTRecipe(ItemStack items, ItemStack[] out)
-//		{
-//			this(null, items, out);
-//		}
+		// public CTRecipe(ItemStack items, ItemStack[] out)
+		// {
+		// this(null, items, out);
+		// }
 
 		public CTRecipe(Class tool, ItemStack items, ItemStack[] out)
 		{
 			otherOutputs = new ArrayList<PositionedStack>();
 			ingredient = new PositionedStack(items, 29, 31);
 			output = new PositionedStack(out[0], 75, 22);
-			
-			for(int i = 0; i < sampleTools.length; i++)
+
+			for (int i = 0; i < sampleTools.length; i++)
 			{
-				if(tool.isAssignableFrom(sampleTools[i].getClass()))
+				if (tool.isAssignableFrom(sampleTools[i].getClass()))
 				{
 					otherOutputs.add(new PositionedStack(new ItemStack(sampleTools[i]), 29, 13));
 				}
@@ -70,7 +73,7 @@ public class CuttingTableRecipeHandler extends TemplateRecipeHandler
 		{
 			return output;
 		}
-		
+
 		@Override
 		public PositionedStack getIngredient()
 		{

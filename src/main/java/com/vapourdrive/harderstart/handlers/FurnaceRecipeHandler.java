@@ -29,8 +29,8 @@ public class FurnaceRecipeHandler
 	}
 
 	/**
-	 * Iterates through furnace recipes removes those I don't want
-	 * TODO use for something worthwhile
+	 * Iterates through furnace recipes removes those I don't want TODO use for
+	 * something worthwhile
 	 */
 	public static void recipeRemover()
 	{

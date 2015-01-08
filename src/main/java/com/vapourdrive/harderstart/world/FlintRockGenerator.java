@@ -13,8 +13,8 @@ public class FlintRockGenerator extends WorldGenerator
 {
 
 	/**
-	 * "flint" rocks generate in the world, first tools material woot
-	 * TODO make modular for use with more surface gen blocks
+	 * "flint" rocks generate in the world, first tools material woot TODO make
+	 * modular for use with more surface gen blocks
 	 */
 	@Override
 	public boolean generate(World world, Random rand, int x, int y, int z)

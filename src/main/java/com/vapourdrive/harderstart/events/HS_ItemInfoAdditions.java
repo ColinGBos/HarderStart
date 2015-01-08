@@ -13,8 +13,8 @@ public class HS_ItemInfoAdditions
 {
 	/**
 	 * Adds things to the item tooltips currently adds little plug for a stick
-	 * being a basic tool as well as ore dictionary listings
-	 * TODO make configurable and pretty things up
+	 * being a basic tool as well as ore dictionary listings TODO make
+	 * configurable and pretty things up
 	 * 
 	 * @param event
 	 */
@@ -29,7 +29,8 @@ public class HS_ItemInfoAdditions
 			{
 				event.toolTip.add("Rudimentary weapon and tool");
 			}
-			//event.toolTip.add(stack.getItem().getUnlocalizedName() + " " + stack.getItemDamage());
+			// event.toolTip.add(stack.getItem().getUnlocalizedName() + " " +
+			// stack.getItemDamage());
 
 			int[] oreIDs = OreDictionary.getOreIDs(stack);
 			if (oreIDs.length > 0)

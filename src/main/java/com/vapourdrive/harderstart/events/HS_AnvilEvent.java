@@ -96,13 +96,14 @@ public class HS_AnvilEvent
 	{
 		Enchantment enchant = gem.getGemEnchantment();
 		int enchantID = enchant.effectId;
-		
+
 		Map enchantMap = EnchantmentHelper.getEnchantments(gemStack);
-		
-		if (!EnchantmentHelper.getEnchantments(toolStack).containsKey(enchantID) && enchantMap.containsKey(enchantID) && enchant.canApply(toolStack))
+
+		if (!EnchantmentHelper.getEnchantments(toolStack).containsKey(enchantID) && enchantMap.containsKey(enchantID)
+				&& enchant.canApply(toolStack))
 		{
 			int level = ((Integer) enchantMap.get(enchantID));
-			
+
 			ItemStack outputStack = toolStack.copy();
 			outputStack.addEnchantment(enchant, level);
 			event.output = outputStack;

@@ -2,12 +2,12 @@ package com.vapourdrive.harderstart.world;
 
 import java.util.Random;
 
-import com.vapourdrive.harderstart.blocks.HS_Blocks;
-import com.vapourdrive.harderstart.items.GemRef;
-
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenerator;
+
+import com.vapourdrive.harderstart.blocks.HS_Blocks;
+import com.vapourdrive.harderstart.items.GemRef;
 
 public class GeodeGenerator extends WorldGenerator
 {

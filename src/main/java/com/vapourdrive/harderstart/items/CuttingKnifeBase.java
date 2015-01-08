@@ -45,8 +45,8 @@ public class CuttingKnifeBase extends ItemTool
 	public float func_150893_a(ItemStack stack, Block block)
 	{
 		Material material = block.getMaterial();
-		if(material == Material.plants && material == Material.vine && material == Material.coral && material == Material.leaves
-					&& material == Material.gourd)
+		if (material == Material.plants && material == Material.vine && material == Material.coral && material == Material.leaves
+				&& material == Material.gourd)
 		{
 			return 1.5F;
 		}

@@ -7,6 +7,7 @@ public class FlintItemBlock extends HS_BaseItemBlock
 
 	/**
 	 * TODO add information to tooltip
+	 * 
 	 * @param block
 	 */
 	public FlintItemBlock(Block block)

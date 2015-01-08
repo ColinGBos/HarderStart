@@ -157,7 +157,7 @@ public class GemRock extends Block
 			{
 				level = maxLevels;
 			}
-			if(level > 0)
+			if (level > 0)
 			{
 				stack.addEnchantment(Enchantment, level);
 			}

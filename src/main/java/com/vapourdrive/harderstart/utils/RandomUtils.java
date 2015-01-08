@@ -7,8 +7,7 @@ import net.minecraft.world.World;
 public class RandomUtils
 {
 	/**
-	 * Called to spawn an itemstack in the world 
-	 * Randomly generates location
+	 * Called to spawn an itemstack in the world Randomly generates location
 	 * 
 	 * @param world
 	 * @param x

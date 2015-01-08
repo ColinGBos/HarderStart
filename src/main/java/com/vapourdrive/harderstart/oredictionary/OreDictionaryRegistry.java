@@ -5,7 +5,6 @@ import net.minecraftforge.oredict.OreDictionary;
 
 import com.vapourdrive.harderstart.items.HS_Items;
 
-
 public class OreDictionaryRegistry
 {
 	/**
@@ -13,11 +12,11 @@ public class OreDictionaryRegistry
 	 */
 	public static void init()
 	{
-		//Blocks
+		// Blocks
 		OreDictionary.registerOre("netherrack", Blocks.netherrack);
 		OreDictionary.registerOre("stoneEnd", Blocks.end_stone);
-		
-		//Rubbles
+
+		// Rubbles
 		OreDictionary.registerOre("oreIron", HS_Items.ironOre_rubble);
 		OreDictionary.registerOre("oreCoal", HS_Items.coalOre_rubble);
 		OreDictionary.registerOre("oreGold", HS_Items.goldOre_rubble);
@@ -45,8 +44,6 @@ public class OreDictionaryRegistry
 		OreDictionary.registerOre("orePlatinum", HS_Items.platinumOre_rubble);
 		OreDictionary.registerOre("oreMithril", HS_Items.mithrilOre_rubble);
 		OreDictionary.registerOre("stoneEnd", HS_Items.stoneEnd_rubble);
-
-
 
 	}
 

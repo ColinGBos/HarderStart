@@ -54,8 +54,8 @@ public class ContainerCuttingTable extends Container
 	}
 
 	/**
-	 * Many attempts at getting the slots to update properly
-	 * TODO consider once again moving logi to container from Tile Entity inventory
+	 * Many attempts at getting the slots to update properly TODO consider once
+	 * again moving logi to container from Tile Entity inventory
 	 */
 	@Override
 	public void onCraftMatrixChanged(IInventory inventory)
@@ -67,8 +67,9 @@ public class ContainerCuttingTable extends Container
 
 	/**
 	 * Supposed to update the cutting table when something happens
-	 * implementations of stack manipulation are too varied to be reliable
-	 * TODO revamp - crafts as default so there are no tricky possible dupe-bug situations
+	 * implementations of stack manipulation are too varied to be reliable TODO
+	 * revamp - crafts as default so there are no tricky possible dupe-bug
+	 * situations
 	 */
 	@Override
 	public ItemStack transferStackInSlot(EntityPlayer player, int slotID)
@@ -80,7 +81,7 @@ public class ContainerCuttingTable extends Container
 		{
 			ItemStack nextStack = slot.getStack();
 			currentStack = nextStack.copy();
-			
+
 			if (slotID >= 0 && slotID < 6)
 			{
 				if (!this.mergeItemStack(nextStack, 6, 42, true))
@@ -148,8 +149,9 @@ public class ContainerCuttingTable extends Container
 	}
 
 	/**
-	 * Crafts the item and decreases crafters if the container is closed - unreliable and has chance for dupe bugs
-	 * now I see why the vanilla crafting table works as it does...
+	 * Crafts the item and decreases crafters if the container is closed -
+	 * unreliable and has chance for dupe bugs now I see why the vanilla
+	 * crafting table works as it does...
 	 */
 	@Override
 	public void onContainerClosed(EntityPlayer player)

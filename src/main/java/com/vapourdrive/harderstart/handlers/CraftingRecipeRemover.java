@@ -13,9 +13,8 @@ import net.minecraft.item.crafting.IRecipe;
 public class CraftingRecipeRemover
 {
 	/**
-	 * Iterates through the crafting recipe list and removes recipes
-	 * for specified stacks
-	 * TODO actually use with point
+	 * Iterates through the crafting recipe list and removes recipes for
+	 * specified stacks TODO actually use with point
 	 */
 	public static void init()
 	{
