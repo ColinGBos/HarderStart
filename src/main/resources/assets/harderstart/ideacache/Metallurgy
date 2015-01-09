@@ -1,0 +1,7 @@
+It would be really cool to have the processing of ores doen in the world instead of in machines and such
+For instance the ore you get or rubble would need to be placed inside a multiblock smeltery style settup and then gets turned into something else as a result
+	the ability to process certain metals would need to be related to their actual melting points, likely rounded to five tiers
+	This would provide the ability to control progression through the tiers of metals and allow you to implement other tiers of iron and alloys
+	
+The player would be forced to pick blocks up in world and keep track of the smeltery but it would provide more 
+	gameplay than simple set and forget stack processing all-encompassing furnaces with no tiers.
