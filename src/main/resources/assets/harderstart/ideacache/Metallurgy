@@ -5,3 +5,7 @@ For instance the ore you get or rubble would need to be placed inside a multiblo
 	
 The player would be forced to pick blocks up in world and keep track of the smeltery but it would provide more 
 	gameplay than simple set and forget stack processing all-encompassing furnaces with no tiers.
+	
+The smeltery would likely be shaped in a U with a fuel source at the bottom, and some sort of hardened bricks for the walls
+	I would likely implement a "tongs" item that the player could use to shift click blocks out of the smelter for use without having to break the walls
+	constantly.
