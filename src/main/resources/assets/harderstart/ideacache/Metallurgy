@@ -1,4 +1,4 @@
-It would be really cool to have the processing of ores doen in the world instead of in machines and such
+It would be really cool to have the processing of ores done in the world instead of in machines and such
 For instance the ore you get or rubble would need to be placed inside a multiblock smeltery style settup and then gets turned into something else as a result
 	the ability to process certain metals would need to be related to their actual melting points, likely rounded to five tiers
 	This would provide the ability to control progression through the tiers of metals and allow you to implement other tiers of iron and alloys
@@ -25,9 +25,3 @@ Outline of mettalurgic history
 	A block of the respective rough metal will need to be formed out of 9 of the refined rubble items and can then be directly turned into a block of its
 	respective metal in the world in a bloomery, this will have different level temperatures.
 		
-First tools are flint for the "sharp" ones, namely a rudimentary hatchet - weapon and cutting capabilities, also a flint hoe/shovel combo
-You will also be able to make your first stone mallet out of a rock that you find in the world and a stick and some string/twine
-
-Because these tools will have such low durabilities you will be encouraged to do some real caveing before just settling down in a hole. 
-I also potentially want to make it so that if you punch dirt with anything besides a shovel it drops partial dirt, an item that can't actually
-be placed into the world. If you want to make a shelter you need to craft a block to place into the world.
