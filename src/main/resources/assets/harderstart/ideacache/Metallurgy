@@ -9,3 +9,25 @@ The player would be forced to pick blocks up in world and keep track of the smel
 The smeltery would likely be shaped in a U with a fuel source at the bottom, and some sort of hardened bricks for the walls
 	I would likely implement a "tongs" item that the player could use to shift click blocks out of the smelter for use without having to break the walls
 	constantly.
+	
+Outline of mettalurgic history
+
+	Metals:
+		Lead: plentiful, very soft and dense, used for early world piping.
+		Tin: extruded from cassiterite, hard to find, not great by itself.
+		Copper: plentiful, slightly higher melting temp than tin and lead, quite soft.
+		Silver: produced as a by-pruduct of processing copper, gold and lead; highest conductivity, used as a catalyst. Most reflective metal.
+		Gold: very soft, medium melting temperature. used as conductive solder.
+		Iron: very high melting temperature, isn't smelted in a bloomery like the others, turned into bloom and hammered out.
+		
+	The ore will initially be harvested with a mallet which will not drop the actual ore block but rubble representation of it, lots of stone
+	rubble and a bit of ore rich rubble. You can take that ore rich rubble and refine it on the processing table with a mallet to remove some impurities.
+	A block of the respective rough metal will need to be formed out of 9 of the refined rubble items and can then be directly turned into a block of its
+	respective metal in the world in a bloomery, this will have different level temperatures.
+		
+First tools are flint for the "sharp" ones, namely a rudimentary hatchet - weapon and cutting capabilities, also a flint hoe/shovel combo
+You will also be able to make your first stone mallet out of a rock that you find in the world and a stick and some string/twine
+
+Because these tools will have such low durabilities you will be encouraged to do some real caveing before just settling down in a hole. 
+I also potentially want to make it so that if you punch dirt with anything besides a shovel it drops partial dirt, an item that can't actually
+be placed into the world. If you want to make a shelter you need to craft a block to place into the world.
