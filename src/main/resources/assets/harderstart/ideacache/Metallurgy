@@ -20,8 +20,19 @@ Outline of mettalurgic history
 		Gold: very soft, medium melting temperature. used as conductive solder.
 		Iron: very high melting temperature, isn't smelted in a bloomery like the others, turned into bloom and hammered out.
 		
-	The ore will initially be harvested with a mallet which will not drop the actual ore block but rubble representation of it, lots of stone
-	rubble and a bit of ore rich rubble. You can take that ore rich rubble and refine it on the processing table with a mallet to remove some impurities.
-	A block of the respective rough metal will need to be formed out of 9 of the refined rubble items and can then be directly turned into a block of its
-	respective metal in the world in a bloomery, this will have different level temperatures.
+	Progression:
+	
+		Start the game, find means to make a rough rock mallet, obtain tin and copper, native copper is plentiful, cassiterite for tin isn't as much.
+		Copper and tin need to be combined into a mixed block and placed in a fueled bloomery, block will convert into a rough bronze. 
+		Take rough bronze into the processing table with a mallet to get multiple bronze chunks. Some chunks need to be made sharp, some flat.
+		Chunk->flat->sharp with the mallet
+		You will need to make the tool head, handle and connector seperately, some tools may need multiple "head" components. This will also
+		require some serious mallet making as they will indeed take damage.
+		
+		Similaryly for the other tools bronze -> wrought iron -> pig iron/regualar iron -> steels (different types)
+		
+		If you want the Bloomery to be effective at smelting higher temperature materials you will need to use more efficient fuel
+		process coal into coal coke, and charcoal... something.
+		
+		Bloomery and the production of coke will require fire brick - from clay.
 		
