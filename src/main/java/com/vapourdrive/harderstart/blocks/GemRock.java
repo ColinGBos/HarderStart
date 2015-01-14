@@ -45,6 +45,12 @@ public class GemRock extends Block
 			list.add(new ItemStack(block, 1, i));
 		}
 	}
+	
+	@Override
+	public int getDamageValue(World world, int x, int y, int z)
+	{
+		return world.getBlockMetadata(x, y, z);
+	}
 
 	@Override
 	@SideOnly(Side.CLIENT)

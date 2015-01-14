@@ -9,6 +9,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
+import net.minecraft.world.World;
 
 import com.vapourdrive.harderstart.HS_ModInfo;
 import com.vapourdrive.harderstart.HarderStart;
@@ -38,6 +39,12 @@ public class BlockFireBrick extends Block
 		{
 			list.add(new ItemStack(block, 1, i));
 		}
+	}
+	
+	@Override
+	public int getDamageValue(World world, int x, int y, int z)
+	{
+		return world.getBlockMetadata(x, y, z);
 	}
 	
 	@Override
