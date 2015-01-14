@@ -5,8 +5,8 @@ tile.flint_block.name=Ground Flint
 tile.cutting_table.name=Cutting Table
 tile.food_bucket_block.name=Food Bucket
 tile.fire_clay.name=Fire Clay
-tile.hardened_fire_clay.name=Hardened Fire Clay
-tile.fire_brick.name=Fire Brick
+tile.fire_brick.hardened_fire_clay.name=Hardened Fire Clay
+tile.fire_brick.fire_brick.name=Fire Brick
 
 //Items
 item.flint_hatchet.name=Flint Hatchet
