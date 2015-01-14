@@ -29,8 +29,7 @@ public class HS_ItemInfoAdditions
 			{
 				event.toolTip.add("Rudimentary weapon and tool");
 			}
-			// event.toolTip.add(stack.getItem().getUnlocalizedName() + " " +
-			// stack.getItemDamage());
+			event.toolTip.add(stack.getItem().getUnlocalizedName() + " " + stack.getItemDamage());
 
 			int[] oreIDs = OreDictionary.getOreIDs(stack);
 			if (oreIDs.length > 0)

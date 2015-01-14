@@ -1,9 +1,11 @@
 package com.vapourdrive.harderstart.oredictionary;
 
 import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
 import com.vapourdrive.harderstart.items.HS_Items;
+import com.vapourdrive.harderstart.utils.ItemStackUtils;
 
 public class OreDictionaryRegistry
 {
@@ -44,7 +46,26 @@ public class OreDictionaryRegistry
 		OreDictionary.registerOre("orePlatinum", HS_Items.platinumOre_rubble);
 		OreDictionary.registerOre("oreMithril", HS_Items.mithrilOre_rubble);
 		OreDictionary.registerOre("stoneEnd", HS_Items.stoneEnd_rubble);
+		
+		compatRegister();
 
+	}
+
+	public static void compatRegister()
+	{
+		ItemStack stack;
+		stack = tryRegister("Railcraft", "tile.railcraft.machine.alpha", 1);
+		if (stack != null)
+		{
+			OreDictionary.registerOre("clayFireBrick", new ItemStack(stack.getItem(), 1, 7));
+		}
+		
+	}
+
+	public static ItemStack tryRegister(String mod, String stack, int size)
+	{
+		ItemStack returnstack = ItemStackUtils.getItemStackFromString(mod, stack, size);
+		return returnstack;
 	}
 
 }
