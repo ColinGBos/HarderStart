@@ -19,6 +19,7 @@ public class HS_ItemInfo
 	public static String DiamondMalletName = "diamond_mallet";
 	public static String GrubName = "grub";
 	public static String CricketName = "cricket";
+	public static String CarbonDust = "carbon_dust";
 
 	// rubbles
 	public static String RubbleName = "stone_rubble";

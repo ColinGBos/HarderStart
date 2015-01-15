@@ -25,6 +25,7 @@ public class HS_Items
 	public static Item rock_mallet;
 	public static Item diamond_mallet;
 	public static Item iron_mallet;
+	public static Item carbon_dust;
 
 	// rubbles
 	public static Item stone_rubble;
@@ -100,6 +101,7 @@ public class HS_Items
 		rock_mallet = new Mallet(FLINT, HS_ItemInfo.RockMalletName);
 		iron_mallet = new Mallet(ToolMaterial.IRON, HS_ItemInfo.IronMalletName);
 		diamond_mallet = new Mallet(ToolMaterial.EMERALD, HS_ItemInfo.DiamondMalletName);
+		carbon_dust = new LogiclessItem(HS_ItemInfo.CarbonDust);
 
 		// Rubbles
 		stone_rubble = new ItemRubble(HS_ItemInfo.RubbleName);
@@ -232,6 +234,7 @@ public class HS_Items
 
 		GameRegistry.registerItem(food_grub, HS_ItemInfo.GrubName);
 		GameRegistry.registerItem(food_cricket, HS_ItemInfo.CricketName);
+		GameRegistry.registerItem(carbon_dust, HS_ItemInfo.CarbonDust);
 	}
 
 	public static void registerRecipes()

@@ -11,6 +11,8 @@ public class HS_BlockInfo
 	public static final String FireClayName = "fire_clay";
 	public static final String FireBrickName = "fire_brick";
 	public static final String[] FireBrickNames = {"hardened_fire_clay", "fire_brick"};
+	public static final String CarbonBlock = "carbon";
+	public static final String[] CarbonBlockNames = {"carbon_block", "coke_block"};
 
 
 	// BlockIcons (more than one per block)

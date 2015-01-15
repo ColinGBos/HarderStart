@@ -7,6 +7,8 @@ tile.food_bucket_block.name=Food Bucket
 tile.fire_clay.name=Fire Clay
 tile.fire_brick.hardened_fire_clay.name=Hardened Fire Clay
 tile.fire_brick.fire_brick.name=Fire Brick
+tile.carbon.carbon_block.name=Block of Refined Carbon
+tile.carbon.coke_block.name=Block of Carbon Coke
 
 //Items
 item.flint_hatchet.name=Flint Hatchet
@@ -23,6 +25,7 @@ item.food_bucket.name=Food Barrel
 item.rock_mallet.name=Rock Mallet
 item.iron_mallet.name=Iron Mallet
 item.diamond_mallet.name=Diamond Mallet
+item.carbon_dust.name=Carbon Dust
 
 //rubble
 item.stone_rubble.name=Rubble
