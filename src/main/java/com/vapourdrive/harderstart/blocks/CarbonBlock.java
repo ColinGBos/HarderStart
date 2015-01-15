@@ -3,11 +3,8 @@ package com.vapourdrive.harderstart.blocks;
 import java.util.List;
 import java.util.Random;
 
-import com.vapourdrive.harderstart.HS_ModInfo;
-import com.vapourdrive.harderstart.HarderStart;
+import org.apache.logging.log4j.Level;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -19,6 +16,12 @@ import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
+
+import com.vapourdrive.harderstart.HS_ModInfo;
+import com.vapourdrive.harderstart.HarderStart;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class CarbonBlock extends Block
 {
@@ -32,6 +35,7 @@ public class CarbonBlock extends Block
 		setBlockName(HS_BlockInfo.CarbonBlock);
 		setCreativeTab(HarderStart.tabharderstart);
 		setStepSound(soundTypeGravel);
+		this.setHardness(0.6F);
 	}
 
 	@Override
@@ -94,8 +98,10 @@ public class CarbonBlock extends Block
 	@Override
 	public void onNeighborBlockChange(World world, int x, int y, int z, Block block)
 	{
+		HarderStart.log.log(Level.INFO, "neighbor update");
 		if (world.getBlock(x, y + 1, z) == Blocks.fire && world.getBlockMetadata(x, y, z) == 0)
 		{
+			HarderStart.log.log(Level.INFO, "burning");
 			if (isInsulated(world, x, y, z) == true)
 			{
 				Random rand = new Random();
@@ -108,26 +114,24 @@ public class CarbonBlock extends Block
 
 	public boolean isInsulated(World world, int x, int y, int z)
 	{
-		boolean isInsulated = true;
-		
+		int insulatedLevel = 0;
+
 		for (int i = -1; i <= 1; i++)
 		{
 			for (int j = -1; j <= 1; j++)
 			{
 				for (int k = -1; k <= 1; k++)
 				{
-					if (!(i == 0 && j == 0 && k == 0) && !(i == 0 && j == 1 && k == 0))
+					if (world.getBlock(x + i, y + j, z + k) == HS_Blocks.HardenedFireClay
+							&& world.getBlockMetadata(x + i, y + j, z + k) == 1)
 					{
-						if (world.getBlock(x + i, y + j, z + k) != HS_Blocks.HardenedFireClay
-								|| world.getBlockMetadata(x + i, y + j, z + k) != 1)
-						{
-							isInsulated = false;
-						}
+						insulatedLevel++;
 					}
 				}
 			}
 		}
-		return isInsulated;
+		HarderStart.log.log(Level.INFO, insulatedLevel);
+		return insulatedLevel >= 24;
 	}
 
 	@Override

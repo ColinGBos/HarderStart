@@ -30,6 +30,7 @@ public class BlockFireBrick extends Block
 		setBlockName(HS_BlockInfo.FireBrickName);
 		setCreativeTab(HarderStart.tabharderstart);
 		setStepSound(soundTypeStone);
+		this.setHardness(1.0F);
 	}
 	
 	@Override
