@@ -9,6 +9,7 @@ import com.vapourdrive.harderstart.itemblocks.FireClayItemBlock;
 import com.vapourdrive.harderstart.itemblocks.FlintItemBlock;
 import com.vapourdrive.harderstart.itemblocks.FoodBucketItemBlock;
 import com.vapourdrive.harderstart.itemblocks.GemItemBlock;
+import com.vapourdrive.harderstart.itemblocks.RefinedMetalItemBlock;
 import com.vapourdrive.harderstart.itemblocks.RoughMetalItemBlock;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -23,6 +24,7 @@ public class HS_Blocks
 	public static Block HardenedFireClay;
 	public static Block CarbonBlock;
 	public static Block RoughMetal;
+	public static Block RefinedMetalBlock;
 
 	public static void init()
 	{
@@ -34,6 +36,7 @@ public class HS_Blocks
 		HardenedFireClay = new BlockFireBrick();
 		CarbonBlock = new CarbonBlock();
 		RoughMetal = new RoughMetalBlock();
+		RefinedMetalBlock = new RefinedMetalBlock();
 
 		GameRegistry.registerBlock(BlockFlint, FlintItemBlock.class, HS_BlockInfo.FlintName);
 		GameRegistry.registerBlock(CuttingTable, CuttingTableItemBlock.class, HS_BlockInfo.CuttingTableName);
@@ -43,6 +46,8 @@ public class HS_Blocks
 		GameRegistry.registerBlock(HardenedFireClay, FireBrickItemBlock.class, HS_BlockInfo.FireBrickName);
 		GameRegistry.registerBlock(CarbonBlock, CarbonItemBlock.class, HS_BlockInfo.CarbonBlock);
 		GameRegistry.registerBlock(RoughMetal, RoughMetalItemBlock.class, HS_BlockInfo.RougMetalBlock);
+		GameRegistry.registerBlock(RefinedMetalBlock, RefinedMetalItemBlock.class, HS_BlockInfo.RefinedMetalBlock);
+
 	}
 
 	public static void registerRecipes()

@@ -19,6 +19,13 @@ tile.rough_metal.wrought_iron.name=Rough Wrought Iron Block
 tile.rough_metal.steel.name=Rough Steel Block
 tile.rough_metal.gold.name=Rough Gold Block
 
+//Refined metal blocks
+tile.refined_metal.copper.name=Copper Block
+tile.refined_metal.tin.name=Tin Block
+tile.refined_metal.bronze.name=Bronze Block
+tile.refined_metal.wrought_iron.name=Wrought Iron Block
+tile.refined_metal.steel.name=Steel Block
+
 //Items
 item.flint_hatchet.name=Flint Hatchet
 item.flint_spear.name=Flint Spear

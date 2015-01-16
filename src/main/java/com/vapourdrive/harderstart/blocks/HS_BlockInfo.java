@@ -15,7 +15,8 @@ public class HS_BlockInfo
 	public static final String[] CarbonBlockNames = {"carbon_block", "coke_block"};
 	public static final String RougMetalBlock = "rough_metal";
 	public static final String[] RoughMetalNames = {"copper", "tin", "bronze", "iron", "wrought_iron", "gold", "steel"};
-
+	public static final String RefinedMetalBlock = "refined_metal";
+	public static final String[] RefinedMetalNames = {"copper", "tin", "bronze", "wrought_iron", "steel"};
 
 
 	// BlockIcons (more than one per block)
