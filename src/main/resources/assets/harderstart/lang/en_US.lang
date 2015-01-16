@@ -10,6 +10,15 @@ tile.fire_brick.fire_brick.name=Fire Brick
 tile.carbon.carbon_block.name=Block of Refined Carbon
 tile.carbon.coke_block.name=Block of Carbon Coke
 
+//Rough metal blocks
+tile.rough_metal.copper.name=Rough Copper Block
+tile.rough_metal.tin.name=Rough Tin Block
+tile.rough_metal.bronze.name=Rough Bronze Block
+tile.rough_metal.iron.name=Rough Iron Block
+tile.rough_metal.wrought_iron.name=Rough Wrought Iron Block
+tile.rough_metal.steel.name=Rough Steel Block
+tile.rough_metal.gold.name=Rough Gold Block
+
 //Items
 item.flint_hatchet.name=Flint Hatchet
 item.flint_spear.name=Flint Spear

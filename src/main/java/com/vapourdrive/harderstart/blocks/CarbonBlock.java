@@ -48,6 +48,12 @@ public class CarbonBlock extends Block
 	}
 
 	@Override
+	public int damageDropped(int meta)
+	{
+		return meta;
+	}
+
+	@Override
 	public int getDamageValue(World world, int x, int y, int z)
 	{
 		return world.getBlockMetadata(x, y, z);
@@ -102,13 +108,10 @@ public class CarbonBlock extends Block
 		if (world.getBlock(x, y + 1, z) == Blocks.fire && world.getBlockMetadata(x, y, z) == 0)
 		{
 			HarderStart.log.log(Level.INFO, "burning");
-			if (isInsulated(world, x, y, z) == true)
-			{
-				Random rand = new Random();
+			Random rand = new Random();
 
-				int delay = rand.nextInt(40);
-				world.scheduleBlockUpdate(x, y, z, this, 400 + delay);
-			}
+			int delay = rand.nextInt(40);
+			world.scheduleBlockUpdate(x, y, z, this, 400 + delay);
 		}
 	}
 
@@ -137,7 +140,14 @@ public class CarbonBlock extends Block
 	@Override
 	public void updateTick(World world, int x, int y, int z, Random rand)
 	{
-		world.setBlockMetadataWithNotify(x, y, z, 1, 3);
+		if (isInsulated(world, x, y, z))
+		{
+			world.setBlockMetadataWithNotify(x, y, z, 1, 3);
+		}
+		else if (world.getBlock(x, y + 1, z) == Blocks.fire)
+		{
+			world.setBlockToAir(x, y + 1, z);
+		}
 	}
 
 }
