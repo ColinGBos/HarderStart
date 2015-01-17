@@ -190,8 +190,7 @@ public class RoughMetal extends Block
 			{
 				for (int k = -1; k <= 1; k++)
 				{
-					if (world.getBlock(x + i, y + j, z + k) == HS_Blocks.HardenedFireClay
-							&& world.getBlockMetadata(x + i, y + j, z + k) == 1)
+					if (world.getBlock(x + i, y + j, z + k) == HS_Blocks.HardenedFireClay)
 					{
 						insulatedLevel++;
 					}
