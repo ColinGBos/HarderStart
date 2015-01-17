@@ -17,7 +17,13 @@ public class HS_BlockInfo
 	public static final String[] RoughMetalNames = {"copper", "tin", "bronze", "iron", "wrought_iron", "gold", "steel"};
 	public static final String RefinedMetalBlock = "refined_metal";
 	public static final String[] RefinedMetalNames = {"copper", "tin", "bronze", "wrought_iron", "steel"};
-
+	public static final String RoughIron = "rough_iron";
+	public static final String RoughGold = "rough_gold";
+	public static final String RoughCopper = "rough_copper";
+	public static final String RoughTin = "rough_tin";
+	public static final String RoughBronze = "rough_bronze";
+	public static final String RoughWroughtIron = "rough_wrought_iron";
+	public static final String RoughSteel = "rough_steel";
 
 	// BlockIcons (more than one per block)
 	public static final String CuttingTableTop = "cuttingTableTop";
