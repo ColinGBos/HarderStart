@@ -2,13 +2,6 @@ package com.vapourdrive.harderstart.blocks;
 
 import java.util.Random;
 
-import org.apache.logging.log4j.Level;
-
-import com.vapourdrive.harderstart.HS_ModInfo;
-import com.vapourdrive.harderstart.HarderStart;
-
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -16,7 +9,14 @@ import net.minecraft.entity.Entity;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.IIcon;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+
+import com.vapourdrive.harderstart.HS_ModInfo;
+import com.vapourdrive.harderstart.HarderStart;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class RoughMetal extends Block
 {
@@ -42,7 +42,7 @@ public class RoughMetal extends Block
 		resultmeta = resultMeta;
 		smelttime = smeltTime;
 	}
-	
+
 	@Override
 	public int getDamageValue(World world, int x, int y, int z)
 	{
@@ -65,35 +65,49 @@ public class RoughMetal extends Block
 	{
 		return blockTexture[meta];
 	}
-	
-    public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z)
-    {
-        float f = 0.0625F;
-        return AxisAlignedBB.getBoundingBox((double)((float)x + f), (double)y, (double)((float)z + f), (double)((float)(x + 1) - f), (double)((float)(y + 1) - f), (double)((float)(z + 1) - f));
-    }
-	
+
+	public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z)
+	{
+		float f = 0.0625F;
+		return AxisAlignedBB.getBoundingBox((double) ((float) x + f), (double) y, (double) ((float) z + f), (double) ((float) (x + 1) - f),
+				(double) ((float) (y + 1) - f), (double) ((float) (z + 1) - f));
+	}
+
 	@Override
-    public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity)
-    {
+	public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity)
+	{
 		int meta = world.getBlockMetadata(x, y, z);
 		int damage = 0;
-		if(meta > 0)
+		if (meta > 0)
 		{
 			damage++;
 		}
-		if(meta > 2 && meta < 8)
+		if (meta > 2 && meta < 8)
 		{
 			damage++;
 		}
-		if(meta > 4 && meta < 6)
+		if (meta > 4 && meta < 6)
 		{
 			damage++;
 		}
-		if(damage > 0)
+		if (damage > 0)
 		{
-			entity.attackEntityFrom(DamageSource.onFire, (damage)*1.0F);
+			entity.attackEntityFrom(DamageSource.onFire, (damage) * 1.0F);
 		}
-    }
+	}
+
+	@Override
+	public int getLightValue(IBlockAccess world, int x, int y, int z)
+	{
+		int light = 0;
+		light = Math.abs(6 - world.getBlockMetadata(x, y, z));
+		if(14 - (2 * light) < 0)
+		{
+			return 0;
+		}
+		this.setLightLevel(14 - (2 * light));
+		return 14 - (2 * light);
+	}
 
 	@Override
 	public void onBlockAdded(World world, int x, int y, int z)
@@ -118,7 +132,7 @@ public class RoughMetal extends Block
 	public void updateTick(World world, int x, int y, int z, Random rand)
 	{
 		int meta = world.getBlockMetadata(x, y, z);
-		
+
 		if (!isHeated(world, x, y, z))
 		{
 			if (meta >= stages / 2)
@@ -137,18 +151,18 @@ public class RoughMetal extends Block
 			else
 			{
 				meta--;
-				if(meta < 0)
+				if (meta < 0)
 				{
 					meta = 0;
 				}
 				world.setBlockMetadataWithNotify(x, y, z, meta, 3);
 			}
 		}
-		else if(isInsulated(world, x, y, z))
+		else if (isInsulated(world, x, y, z))
 		{
-			if(meta <= stages/2)
+			if (meta <= stages / 2)
 			{
-				meta ++;
+				meta++;
 				{
 					world.setBlockMetadataWithNotify(x, y, z, meta, 2);
 					checkUpdate(world, x, y, z);
@@ -165,7 +179,7 @@ public class RoughMetal extends Block
 		}
 		return false;
 	}
-	
+
 	public boolean isInsulated(World world, int x, int y, int z)
 	{
 		int insulatedLevel = 0;
@@ -184,7 +198,6 @@ public class RoughMetal extends Block
 				}
 			}
 		}
-		HarderStart.log.log(Level.INFO, insulatedLevel);
 		return insulatedLevel >= 24;
 	}
 
