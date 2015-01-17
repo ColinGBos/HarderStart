@@ -50,7 +50,7 @@ public class HS_Blocks
 		RoughBronze = new RoughMetal(HS_BlockInfo.RoughBronze, 12, 0, HS_Blocks.RefinedMetalBlock, 2, 60);
 		RoughGold = new RoughMetal(HS_BlockInfo.RoughGold, 12, 0, Blocks.gold_block, 0, 60);
 		RoughWroughtIron = new RoughMetal(HS_BlockInfo.RoughWroughtIron, 12, 1, HS_Blocks.RefinedMetalBlock, 3, 110);
-		RoughTin = new RoughMetal(HS_BlockInfo.RoughSteel, 12, 1, HS_Blocks.RefinedMetalBlock, 4, 150);
+		RoughSteel = new RoughMetal(HS_BlockInfo.RoughSteel, 12, 1, HS_Blocks.RefinedMetalBlock, 4, 150);
 
 
 

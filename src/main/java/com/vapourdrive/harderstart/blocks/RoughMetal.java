@@ -12,6 +12,9 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.entity.Entity;
+import net.minecraft.util.AxisAlignedBB;
+import net.minecraft.util.DamageSource;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
@@ -62,6 +65,35 @@ public class RoughMetal extends Block
 	{
 		return blockTexture[meta];
 	}
+	
+    public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z)
+    {
+        float f = 0.0625F;
+        return AxisAlignedBB.getBoundingBox((double)((float)x + f), (double)y, (double)((float)z + f), (double)((float)(x + 1) - f), (double)((float)(y + 1) - f), (double)((float)(z + 1) - f));
+    }
+	
+	@Override
+    public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity)
+    {
+		int meta = world.getBlockMetadata(x, y, z);
+		int damage = 0;
+		if(meta > 0)
+		{
+			damage++;
+		}
+		if(meta > 2 && meta < 8)
+		{
+			damage++;
+		}
+		if(meta > 4 && meta < 6)
+		{
+			damage++;
+		}
+		if(damage > 0)
+		{
+			entity.attackEntityFrom(DamageSource.onFire, (damage)*1.0F);
+		}
+    }
 
 	@Override
 	public void onBlockAdded(World world, int x, int y, int z)
@@ -109,9 +141,7 @@ public class RoughMetal extends Block
 				{
 					meta = 0;
 				}
-				{
-					world.setBlock(x, y, z, this.result, this.resultmeta, 3);
-				}
+				world.setBlockMetadataWithNotify(x, y, z, meta, 3);
 			}
 		}
 		else if(isInsulated(world, x, y, z))
