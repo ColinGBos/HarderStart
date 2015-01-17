@@ -1,6 +1,7 @@
 package com.vapourdrive.harderstart.blocks;
 
 import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 
 import com.vapourdrive.harderstart.itemblocks.CarbonItemBlock;
 import com.vapourdrive.harderstart.itemblocks.CuttingTableItemBlock;
@@ -25,6 +26,7 @@ public class HS_Blocks
 	public static Block CarbonBlock;
 	public static Block RoughMetal;
 	public static Block RefinedMetalBlock;
+	public static Block RoughIron;
 
 	public static void init()
 	{
@@ -37,6 +39,7 @@ public class HS_Blocks
 		CarbonBlock = new CarbonBlock();
 		RoughMetal = new RoughMetalBlock();
 		RefinedMetalBlock = new RefinedMetalBlock();
+		RoughIron = new RoughMetal("rough_iron", 9, 1, Blocks.iron_block, 0, 80);
 
 		GameRegistry.registerBlock(BlockFlint, FlintItemBlock.class, HS_BlockInfo.FlintName);
 		GameRegistry.registerBlock(CuttingTable, CuttingTableItemBlock.class, HS_BlockInfo.CuttingTableName);
@@ -47,6 +50,7 @@ public class HS_Blocks
 		GameRegistry.registerBlock(CarbonBlock, CarbonItemBlock.class, HS_BlockInfo.CarbonBlock);
 		GameRegistry.registerBlock(RoughMetal, RoughMetalItemBlock.class, HS_BlockInfo.RougMetalBlock);
 		GameRegistry.registerBlock(RefinedMetalBlock, RefinedMetalItemBlock.class, HS_BlockInfo.RefinedMetalBlock);
+		GameRegistry.registerBlock(RoughIron, RoughMetalItemBlock.class, "rough_iron");
 
 	}
 

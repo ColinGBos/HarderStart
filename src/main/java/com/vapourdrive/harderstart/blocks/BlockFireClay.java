@@ -25,7 +25,7 @@ public class BlockFireClay extends Block
 		setBlockName(HS_BlockInfo.FireClayName);
 		setCreativeTab(HarderStart.tabharderstart);
 		setStepSound(soundTypeGravel);
-		this.setHardness(0.6F);
+		setHardness(0.6F);
 	}
 
 	@Override
