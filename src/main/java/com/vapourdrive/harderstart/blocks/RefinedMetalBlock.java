@@ -26,7 +26,7 @@ public class RefinedMetalBlock extends Block
 	{
 		super(Material.iron);
 		setHardness(1.0F);
-		setBlockName(HS_BlockInfo.RougMetalBlock);
+		setBlockName(HS_BlockInfo.RefinedMetalBlock);
 		setCreativeTab(HarderStart.tabharderstart);
 		setStepSound(soundTypeMetal);
 	}

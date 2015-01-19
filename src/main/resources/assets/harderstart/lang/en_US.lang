@@ -11,13 +11,13 @@ tile.carbon.carbon_block.name=Block of Refined Carbon
 tile.carbon.coke_block.name=Block of Carbon Coke
 
 //Rough metal blocks
-tile.rough_metal.copper.name=Rough Copper Block
-tile.rough_metal.tin.name=Rough Tin Block
-tile.rough_metal.bronze.name=Rough Bronze Block
-tile.rough_metal.iron.name=Rough Iron Block
-tile.rough_metal.wrought_iron.name=Rough Wrought Iron Block
-tile.rough_metal.steel.name=Rough Steel Block
-tile.rough_metal.gold.name=Rough Gold Block
+tile.rough_copper.name=Rough Copper Block
+tile.rough_tin.name=Rough Tin Block
+tile.rough_bronze.name=Rough Bronze Block
+tile.rough_iron.name=Rough Iron Block
+tile.rough_wrought_iron.name=Rough Wrought Iron Block
+tile.rough_steel.name=Rough Steel Block
+tile.rough_gold.name=Rough Gold Block
 
 //Refined metal blocks
 tile.refined_metal.copper.name=Copper Block
