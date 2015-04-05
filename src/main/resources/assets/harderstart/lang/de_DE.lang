@@ -1,0 +1,114 @@
+//Deutsche Lokalisation
+
+//Blöcke
+tile.flint_block.name=Gemahlener Feuerstein
+tile.cutting_table.name=Schneidetisch
+tile.food_bucket_block.name=Lebensmitteleimer
+tile.fire_clay.name=Feuerfester Ton
+tile.fire_brick.hardened_fire_clay.name=Gehärteter Feuerfester Ton
+tile.fire_brick.fire_brick.name=Feuerfester Ziegelstein
+tile.carbon.carbon_block.name=Block von raffiniertem Karbon
+tile.carbon.coke_block.name=Block von Karbonkoks
+
+//Grobe Metallblöcke
+tile.rough_copper.name=Grober Kupferblock
+tile.rough_tin.name=Grober Zinnblock
+tile.rough_bronze.name=Grober Bronzeblock
+tile.rough_iron.name=Grober Eisenblock
+tile.rough_wrought_iron.name=Grober Schmiedeisenblock
+tile.rough_steel.name=Grober Stahlblock
+tile.rough_gold.name=Grober Goldblock
+
+//Veredelte Metallblöcke
+tile.refined_metal.copper.name=Veredelter Kupferblock
+tile.refined_metal.tin.name=Veredelter Zinnblock
+tile.refined_metal.bronze.name=Veredelter Bronzeblock
+tile.refined_metal.wrought_iron.name=Veredelter Schmiedeisenblock
+tile.refined_metal.steel.name=Veredelter Stahlblock
+
+//Gegenstände
+item.flint_hatchet.name=Feuersteinbeil
+item.flint_spear.name=Feuersteinspeer
+item.flint_knife.name=Feuersteinmesser
+item.dead_cow.name=Tote Kuh
+item.dead_horse.name=Totes Pferd
+item.dead_pig.name=Totes Schwein
+item.dead_sheep.name=Totes Schaf
+item.dead_chicken.name=Totes Huhn
+item.diamond_knife.name=Diamantmesser
+item.iron_knife.name=Eisenmesser
+item.food_bucket.name=Lebensmitteleimer
+item.rock_mallet.name=Felsenhammer
+item.iron_mallet.name=Eisenhammer
+item.diamond_mallet.name=Diamanthammer
+item.carbon_dust.name=Karbonstaub
+
+//rubble
+item.stone_rubble.name=Geröll
+item.oreIron_rubble.name=Eisenerzgeröll
+item.oreCoal_rubble.name=Kohleerzgeröll
+item.oreGold_rubble.name=Golderzgeröll
+item.oreLapis_rubble.name=Lapis-Lazulierzgeröll
+item.oreEmerald_rubble.name=Smaragderzgeröll
+item.oreDiamond_rubble.name=Diamanterzgeröll
+item.oreRedstone_rubble.name=Redstoneerzgeröll
+item.oreTin_rubble.name=Zinnerzgeröll
+item.oreCopper_rubble.name=Kupfererzgeröll
+item.oreSilver_rubble.name=Silbererzgeröll
+item.oreNickel_rubble.name=Nickelerzgeröll
+item.oreLead_rubble.name=Bleierzgeröll
+item.oreAluminum_rubble.name=Aluminiumerzgeröll
+item.netherrack_rubble.name=Nethersteingeröll
+item.stoneEnd_rubble.name=Endsteingeröll
+item.oreFzDarkIron_rubble.name=Dunkeleisenerzgeröll 
+item.oreCobalt_rubble.name=Kobalterzgeröll
+item.oreArdite_rubble.name=Arditerzgeröll
+item.oreSaltpeter_rubble.name=Salpetererzgeröll
+item.oreSulfur_rubble.name=Schwefelerzgeröll
+item.oreUranium_rubble.name=Uranerzgeröll
+item.oreMithril_rubble.name=Mithrilerzgeröll
+item.orePlatinum_rubble.name=Platinerzgeröll
+item.oreQuartz_rubble.name=Quartzerzgeröll
+
+//Lebensmittel
+item.cricket.name=Heuschrecke
+item.grub.name=Made
+
+//Edelsteine
+item.gem_heliodor.name=Heliodor
+item.gem_pyrolusite.name=Pyrolusit
+item.gem_nephrite.name=Nephrit
+item.gem_aventurine.name=Aventurin
+item.gem_hambergite.name=Hambergit
+item.gem_amazonite.name=Amazonit
+item.gem_aquamarine.name=Aquamarin
+item.gem_hessonite.name=Hessonit
+item.gem_jadeite.name=Jadeit
+item.gem_hematite.name=Hematit
+item.gem_spodumene.name=Spodumen
+item.gem_citrine.name=Citrin
+item.gem_fluorite.name=Flourit
+item.gem_pyrite.name=Pyrit
+item.gem_kornerupine.name=Kornerupin
+item.gem_prehnite.name=Prehnit
+item.gem_dioptase.name=Dioptas
+item.gem_agate.name=Agat
+item.gem_variscite.name=Variscit
+item.gem_almandine.name=Almandin
+item.gem_pyrope.name=Pyrop
+item.gem_alexandrite.name=Alexandrit
+item.gem_goshenite.name=Goshenit
+item.gem_tourmaline.name=Turmalin
+
+//Gefärbte Edelsteinerze
+tile.gem_rock.white_gem.name=Weißes Edelsteinerz
+tile.gem_rock.black_gem.name=Schwarzes Edelsteinerz
+tile.gem_rock.blue_gem.name=Blaues Edelsteinerz
+tile.gem_rock.tourquoise_gem.name=Türkises Edelsteinerz
+tile.gem_rock.orange_gem.name=Oranges Edelsteinerz
+tile.gem_rock.red_gem.name=Rotes Edelsteinerz
+tile.gem_rock.purple_gem.name=Violettes Edelsteinerz
+tile.gem_rock.claret_gem.name=Weinrotes Edelsteinerz
+tile.gem_rock.green_gem.name=Grünes Edelsteinerz
+tile.gem_rock.yellow_gem.name=Gelbes Edelsteinerz
+
